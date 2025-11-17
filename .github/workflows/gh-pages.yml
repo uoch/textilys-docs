@@ -16,10 +16,12 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install MkDocs and theme
+      - name: Install MkDocs and Material theme
         run: |
           pip install mkdocs
           pip install mkdocs-material
 
       - name: Build and deploy
-        run: mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: mkdocs gh-deploy --force --clean
