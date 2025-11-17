@@ -1,0 +1,3193 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://yourgithubusername.github.io/textilys-docs/referentiel/model/">
+      
+      
+        <link rel="prev" href="../client/">
+      
+      
+        <link rel="next" href="../fmp/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Model - Textilys ERP - Guide Utilisateur</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fiche-modele-documentation-utilisateur" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Textilys ERP - Guide Utilisateur" class="md-header__button md-logo" aria-label="Textilys ERP - Guide Utilisateur" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Textilys ERP - Guide Utilisateur
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Model
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Textilys ERP - Guide Utilisateur" class="md-nav__button md-logo" aria-label="Textilys ERP - Guide Utilisateur" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    Textilys ERP - Guide Utilisateur
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Référentiel
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Référentiel
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Client
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-en-tete-de-la-fiche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. En-tête de la fiche
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. En-tête de la fiche">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modele-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modèle technique *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valide
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annule-le" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annulé le :
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-onglets-panneaux-lateraux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Onglets &amp; Panneaux latéraux
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Onglets &amp; Panneaux latéraux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#panneau-droit-actions-rapides" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Panneau droit : Actions rapides
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-informations-modele-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Informations Modèle — Détails
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Informations Modèle — Détails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description-commerciale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description commerciale *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modele-commercial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modèle commercial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thème *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#famille-atelier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Famille atelier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quantités
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arret-de-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arrêt de Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-informations-techniques-colonne-droite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Informations techniques (colonne droite)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Informations techniques (colonne droite)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#certificat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Certificat (*)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marque
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#famille" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Famille *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-cao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code CAO *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-grille-de-taille" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code grille de Taille *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sous-famille" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sous-Famille
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cycle-de-production-mrp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cycle de Production MRP *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ligne-budgetaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ligne budgétaire
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-liste-des-coloris-du-modele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Liste des Coloris du Modèle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Liste des Coloris du Modèle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#colonnes-affichees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Colonnes affichées :
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-acces-aux-sous-fiches-panneau-droit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Accès aux sous-fiches (panneau droit)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-creationmodification-nomenclature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Création/Modification Nomenclature
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Création/Modification Nomenclature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-tete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        En-tête
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-daffichage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Options d’affichage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listes-des-coloris" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listes des coloris
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Références
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emploi-par-tailles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Emploi par Tailles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-actions-en-bas-de-la-fenetre-nomenclature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Actions en bas de la fenêtre Nomenclature
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-regles-de-saisie-bonnes-pratiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Règles de saisie &amp; Bonnes pratiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fmp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FMP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../auxiliaire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auxiliaire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gamme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamme du produit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simulation Besoins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parametrage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramétrage Référentiel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commandes (Achats)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Commandes (Achats)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commandes/commande_client.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commande Client
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commandes/commande_fournisseur.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commande Fournisseur
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commandes/commande_ensemble.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commande Ensemble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commandes/edition_reception.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edition Réception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commandes/solde.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solde des Commandes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commandes/parametrage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramétrage Commandes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Facturation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Facturation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facturation/facture.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Facture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facturation/prix_cession.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prix Cession
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facturation/maintenance.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintenance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facturation/etat.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facturation/parametrage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramétrage Facturation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stock
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stock
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/reception.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Réception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/etat_stock.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etat de Stock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/parametrage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramétrage Stock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planning et Ordonnancement
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Planning et Ordonnancement
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planning/ordres_fabrication.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ordres de Fabrication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planning/parametrage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramétrage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coupe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Coupe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../coupe/cut_partner.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cut Partner
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../coupe/cut_partner_planification.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cut Partner Planification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../coupe/parametrage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramétrage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Production
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Production
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../production/suivi.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Suivi de Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../production/activite_atelier.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activité Atelier
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../production/impression.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Impression Pipelette
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../production/repartition.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Répartition Pipelette
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../production/maintenance.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintenance Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../production/suivie.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Suivie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../production/parametrage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramétrage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emballage & Expédition
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Emballage & Expédition
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../emballage/activite_platform.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activité Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../emballage/parametrage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramétrage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Administration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/roles.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Création des rôles utilisateurs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/droits_module.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attribution des droits par module
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/auth.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentification (login/mot de passe)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/audit.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traçabilité des modifications (audit trail)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/parametrage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paramétrage Gestion des utilisateurs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-en-tete-de-la-fiche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. En-tête de la fiche
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. En-tête de la fiche">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modele-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modèle technique *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valide
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annule-le" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annulé le :
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-onglets-panneaux-lateraux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Onglets &amp; Panneaux latéraux
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Onglets &amp; Panneaux latéraux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#panneau-droit-actions-rapides" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Panneau droit : Actions rapides
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-informations-modele-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Informations Modèle — Détails
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Informations Modèle — Détails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description-commerciale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description commerciale *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modele-commercial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modèle commercial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thème *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#famille-atelier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Famille atelier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quantités
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arret-de-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arrêt de Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-informations-techniques-colonne-droite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Informations techniques (colonne droite)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Informations techniques (colonne droite)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#certificat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Certificat (*)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marque
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#famille" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Famille *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-cao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code CAO *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-grille-de-taille" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code grille de Taille *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sous-famille" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sous-Famille
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cycle-de-production-mrp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cycle de Production MRP *
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ligne-budgetaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ligne budgétaire
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-liste-des-coloris-du-modele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Liste des Coloris du Modèle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Liste des Coloris du Modèle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#colonnes-affichees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Colonnes affichées :
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-acces-aux-sous-fiches-panneau-droit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Accès aux sous-fiches (panneau droit)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-creationmodification-nomenclature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Création/Modification Nomenclature
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Création/Modification Nomenclature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-tete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        En-tête
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-daffichage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Options d’affichage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listes-des-coloris" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listes des coloris
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Références
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emploi-par-tailles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Emploi par Tailles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-actions-en-bas-de-la-fenetre-nomenclature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Actions en bas de la fenêtre Nomenclature
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-regles-de-saisie-bonnes-pratiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Règles de saisie &amp; Bonnes pratiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="fiche-modele-documentation-utilisateur">Fiche Modèle — Documentation Utilisateur</h1>
+<p>La <strong>Fiche Modèle</strong> est l’interface centrale de gestion des modèles produits dans le système. Elle permet de créer, modifier et suivre les informations techniques, commerciales et logistiques liées à chaque modèle, y compris ses coloris, sa nomenclature et son historique.</p>
+<p><img alt="Capture d'écran : Fiche Modèle - Vue principale" src="../../images/fm.png" /></p>
+<blockquote>
+<p>⚠️ <strong>Remarque</strong> : Seuls les utilisateurs autorisés peuvent créer ou modifier un modèle. Une validation par un responsable métier peut être requise selon les règles d’entreprise.</p>
+</blockquote>
+<hr />
+<h2 id="1-en-tete-de-la-fiche">1. En-tête de la fiche</h2>
+<h3 id="tiers">Tiers</h3>
+<ul>
+<li>Sélectionnez le <strong>tiers fabricant ou fournisseur</strong> via la liste déroulante (ex: <code>0115</code> → <code>MEY GmbH</code>).</li>
+<li>Le nom du tiers s’affiche automatiquement à droite.</li>
+</ul>
+<h3 id="modele-technique">Modèle technique *</h3>
+<ul>
+<li>Saisissez ou recherchez le <strong>code technique du modèle</strong> via la loupe.</li>
+<li>Ce champ est obligatoire et unique.</li>
+</ul>
+<h3 id="valide">Valide</h3>
+<ul>
+<li>Cochez <strong>Oui</strong> pour activer le modèle dans le système.</li>
+<li>Cochez <strong>Non</strong> pour le désactiver sans le supprimer.</li>
+</ul>
+<h3 id="annule-le">Annulé le :</h3>
+<ul>
+<li>Date d’annulation du modèle (si applicable).</li>
+</ul>
+<hr />
+<h2 id="2-onglets-panneaux-lateraux">2. Onglets &amp; Panneaux latéraux</h2>
+<h3 id="panneau-droit-actions-rapides">Panneau droit : Actions rapides</h3>
+<table>
+<thead>
+<tr>
+<th>Bouton</th>
+<th>Fonction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enregistrer</strong> ✔️</td>
+<td>Sauvegarde les modifications apportées.</td>
+</tr>
+<tr>
+<td><strong>Nouveau</strong> ➕</td>
+<td>Crée un nouveau modèle.</td>
+</tr>
+<tr>
+<td><strong>Supprimer</strong> 🗑️</td>
+<td>Supprime définitivement le modèle (confirmation requise).</td>
+</tr>
+<tr>
+<td><strong>Annuler</strong> ❌</td>
+<td>Annule les modifications non sauvegardées.</td>
+</tr>
+<tr>
+<td><strong>Duplication</strong> 📄+📄</td>
+<td>Crée une copie du modèle actuel.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Astuce</strong> : Utilisez <strong>Duplication</strong> pour créer un modèle similaire (ex: variante de couleur ou de collection).</p>
+</blockquote>
+<hr />
+<h2 id="3-informations-modele-details">3. Informations Modèle — Détails</h2>
+<h3 id="description-commerciale">Description commerciale *</h3>
+<ul>
+<li>Libellé commercial du modèle (ex: <code>1350018 ZOLLTARIFNR: 62121090</code>).</li>
+<li>Obligatoire pour la visibilité commerciale.</li>
+</ul>
+<h3 id="modele-commercial">Modèle commercial</h3>
+<ul>
+<li>Code commercial utilisé pour les ventes et les commandes.</li>
+</ul>
+<h3 id="collection">Collection</h3>
+<ul>
+<li>Sélectionnez la collection associée via la loupe.</li>
+</ul>
+<h3 id="theme">Thème *</h3>
+<ul>
+<li>Thème du modèle (ex: <code>PRETTY</code>, <code>PRETTY JOAN</code>). Obligatoire.</li>
+</ul>
+<h3 id="famille-atelier">Famille atelier</h3>
+<ul>
+<li>Famille technique utilisée dans l’atelier de production.</li>
+</ul>
+<h3 id="quantites">Quantités</h3>
+<ul>
+<li><strong>Quantité Barquette</strong> : Nombre d’unités par barquette.</li>
+<li><strong>Quantité Pipelette</strong> : Nombre d’unités par pipelette (si applicable).</li>
+</ul>
+<h3 id="arret-de-production">Arrêt de Production</h3>
+<ul>
+<li><strong>Non</strong> : Modèle actif.</li>
+<li><strong>Oui</strong> : Modèle arrêté (à sélectionner dans la liste déroulante).</li>
+<li><strong>Date Arrêt Production</strong> : Date effective de l’arrêt (si applicable).</li>
+</ul>
+<hr />
+<h2 id="4-informations-techniques-colonne-droite">4. Informations techniques (colonne droite)</h2>
+<h3 id="certificat">Certificat (*)</h3>
+<ul>
+<li>Sélectionnez le type de certificat requis (ex: <code>-</code>, <code>OEKO-TEX</code>, etc.).</li>
+</ul>
+<h3 id="marque">Marque</h3>
+<ul>
+<li>Marque associée au modèle (ex: <code>MEY</code>).</li>
+</ul>
+<h3 id="famille">Famille *</h3>
+<ul>
+<li>Famille produit (ex: <code>SG</code>). Obligatoire.</li>
+</ul>
+<h3 id="code-cao">Code CAO *</h3>
+<ul>
+<li>Code utilisé dans les logiciels de conception assistée par ordinateur.</li>
+</ul>
+<h3 id="code-grille-de-taille">Code grille de Taille *</h3>
+<ul>
+<li>Référence de la grille de tailles (ex: <code>75 90B</code>).</li>
+</ul>
+<h3 id="sous-famille">Sous-Famille</h3>
+<ul>
+<li>Sous-catégorie du modèle.</li>
+</ul>
+<h3 id="cycle-de-production-mrp">Cycle de Production MRP *</h3>
+<ul>
+<li>Cycle de production utilisé dans le module MRP (Management des Ressources de Production).</li>
+</ul>
+<h3 id="ligne-budgetaire">Ligne budgétaire</h3>
+<ul>
+<li>Ligne budgétaire associée au modèle (utile pour le suivi financier).</li>
+</ul>
+<hr />
+<h2 id="5-liste-des-coloris-du-modele">5. Liste des Coloris du Modèle</h2>
+<p>Sous la section “Informations Modèle”, vous trouverez la liste des coloris associés au modèle.</p>
+<h3 id="colonnes-affichees">Colonnes affichées :</h3>
+<table>
+<thead>
+<tr>
+<th>Colonne</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Coloris</strong></td>
+<td>Code du coloris (ex: <code>1724</code>, <code>38</code>)</td>
+</tr>
+<tr>
+<td><strong>Libellé</strong></td>
+<td>Nom du coloris (ex: <code>ASTRAL NIGHT</code>, <code>BLOSSOM</code>)</td>
+</tr>
+<tr>
+<td><strong>Type Modèle</strong></td>
+<td>Type de modèle (ex: <code>Série</code>)</td>
+</tr>
+<tr>
+<td><strong>Arrêt Prod.</strong></td>
+<td>Statut d’arrêt de production</td>
+</tr>
+<tr>
+<td><strong>Date Arrêt Prod</strong></td>
+<td>Date d’arrêt (si applicable)</td>
+</tr>
+<tr>
+<td><strong>Arrêt Définitif</strong></td>
+<td>Statut d’arrêt définitif</td>
+</tr>
+<tr>
+<td><strong>Date Arrêt Déf</strong></td>
+<td>Date d’arrêt définitif</td>
+</tr>
+<tr>
+<td><strong>Codif. Thm(Col)</strong></td>
+<td>Codification thématique + coloris</td>
+</tr>
+<tr>
+<td><strong>Date sortie collection Modèle</strong></td>
+<td>Date de fin de commercialisation</td>
+</tr>
+<tr>
+<td><strong>Saison modèle</strong></td>
+<td>Saison d’appartenance</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>✅ Vous pouvez ajouter, modifier ou supprimer des coloris directement depuis cette liste via les boutons <code>+</code> et <code>-</code> situés juste au-dessus.</p>
+</blockquote>
+<hr />
+<h2 id="6-acces-aux-sous-fiches-panneau-droit">6. Accès aux sous-fiches (panneau droit)</h2>
+<p>Après avoir chargé un modèle, le panneau droit propose des accès rapides vers des fonctionnalités spécifiques :</p>
+<ul>
+<li><strong>Fiche</strong> → Retour à la fiche principale du modèle.</li>
+<li><strong>Info Matière</strong> → Accès aux matières premières associées.</li>
+<li><strong>Nomenclature</strong> → Gestion des composants du modèle.</li>
+<li><strong>Code Article</strong> → Génération ou consultation des codes articles.</li>
+<li><strong>Article Comm.</strong> → Informations commerciales liées à l’article.</li>
+<li><strong>Gamme</strong> → Gamme de production associée.</li>
+<li><strong>PRI</strong> → Paramètres du Plan de Réapprovisionnement Intégré.</li>
+<li><strong>Historique</strong> → Historique des modifications.</li>
+</ul>
+<hr />
+<h2 id="7-creationmodification-nomenclature">7. Création/Modification Nomenclature</h2>
+<p>Cliquez sur <strong>Nomenclature</strong> pour accéder à la fenêtre de gestion des composants du modèle.</p>
+<p><img alt="Capture d'écran : Création/Modification Nomenclature" src="../../images/numenclature.png" /></p>
+<h3 id="en-tete">En-tête</h3>
+<ul>
+<li><strong>Modèle Technique</strong> : Affiche le code du modèle courant.</li>
+<li><strong>Libellé Modèle</strong> : Libellé commercial.</li>
+<li><strong>Modèle CAO</strong> : Code CAO associé.</li>
+<li><strong>Login utilisant la nomenclature</strong> : Utilisateur ayant modifié la nomenclature.</li>
+<li><strong>Commentaire</strong> : Champ libre pour notes internes.</li>
+<li><strong>Tiers</strong> : Tiers associé (ex: <code>MEY GmbH</code>).</li>
+</ul>
+<h3 id="options-daffichage">Options d’affichage</h3>
+<ul>
+<li><strong>Nomenclature Valide</strong> : </li>
+<li><strong>O</strong> = Nomenclature valide</li>
+<li><strong>N</strong> = Nomenclature non valide</li>
+<li><strong>Type de Nomenclature</strong> :</li>
+<li><strong>Initial</strong> (par défaut)</li>
+<li><strong>Fabrication</strong></li>
+<li><strong>Achat</strong></li>
+</ul>
+<h3 id="listes-des-coloris">Listes des coloris</h3>
+<ul>
+<li><strong>Liste des coloris Modèle</strong> : Coloris du modèle actuel.</li>
+<li><strong>Liste des Coloris Matières</strong> : Coloris disponibles pour les matières composantes.</li>
+</ul>
+<h3 id="references">Références</h3>
+<p>Tableau principal permettant d’ajouter ou modifier les références de composants :</p>
+<table>
+<thead>
+<tr>
+<th>Colonne</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Référence</strong></td>
+<td>Code de la matière ou composant</td>
+</tr>
+<tr>
+<td><strong>Libellé</strong></td>
+<td>Désignation du composant</td>
+</tr>
+<tr>
+<td><strong>Typ</strong></td>
+<td>Type (ex: F = Fourni, E = Emballage)</td>
+</tr>
+<tr>
+<td><strong>Aff</strong></td>
+<td>Affectation (ex: UN = Unité)</td>
+</tr>
+<tr>
+<td><strong>Blo</strong></td>
+<td>Bloquant (Oui/Non)</td>
+</tr>
+<tr>
+<td><strong>Cdt</strong></td>
+<td>Conditionné (Oui/Non)</td>
+</tr>
+<tr>
+<td><strong>Etat</strong></td>
+<td>État de la référence</td>
+</tr>
+<tr>
+<td><strong>PRI</strong></td>
+<td>Prioritaire (Oui/Non)</td>
+</tr>
+<tr>
+<td><strong>Pays / Client</strong></td>
+<td>Filtres pour afficher les références par pays ou client</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔴 <strong>Ligne Non valide</strong> : Indique une erreur dans la ligne (ex: référence manquante, coloris incompatible).
+🟢 <strong>Référence Coloris Bloquant</strong> : La référence est bloquante pour ce coloris.
+🔴 <strong>Coloris en Arrêt de Production</strong> : Le coloris est arrêté — attention aux impacts.</p>
+</blockquote>
+<h3 id="emploi-par-tailles">Emploi par Tailles</h3>
+<p>Matrice permettant de définir la quantité de chaque composant par taille (ex: <code>75B</code>, <code>80B</code>, <code>85B</code>, <code>90B</code>).</p>
+<blockquote>
+<p>💡 Les cellules vertes indiquent que la référence est assignée à ce coloris/taille.</p>
+</blockquote>
+<hr />
+<h2 id="8-actions-en-bas-de-la-fenetre-nomenclature">8. Actions en bas de la fenêtre Nomenclature</h2>
+<table>
+<thead>
+<tr>
+<th>Bouton</th>
+<th>Fonction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ajouter Réf</strong></td>
+<td>Ajoute une nouvelle référence à la nomenclature.</td>
+</tr>
+<tr>
+<td><strong>Insérer Réf</strong></td>
+<td>Insère une référence à une position spécifique.</td>
+</tr>
+<tr>
+<td><strong>Dupliquer Réf</strong></td>
+<td>Duplique la référence sélectionnée.</td>
+</tr>
+<tr>
+<td><strong>Suppr Réf</strong></td>
+<td>Supprime la référence sélectionnée.</td>
+</tr>
+<tr>
+<td><strong>Rech. Référence</strong></td>
+<td>Recherche une référence existante.</td>
+</tr>
+<tr>
+<td><strong>Remplacer Réf</strong></td>
+<td>Remplace la référence sélectionnée par une autre.</td>
+</tr>
+<tr>
+<td><strong>Référence Supprimée</strong></td>
+<td>Gestion des références supprimées (avec boutons <code>+</code> et <code>-</code>).</td>
+</tr>
+<tr>
+<td><strong>SSE avec gestion OI</strong></td>
+<td>Accès au sous-système d’exploitation avec gestion des ordres internes.</td>
+</tr>
+<tr>
+<td><strong>Enregistrer</strong> ✔️</td>
+<td>Sauvegarde toutes les modifications.</td>
+</tr>
+<tr>
+<td><strong>Export Excel</strong> 📊</td>
+<td>Exporte la nomenclature au format Excel.</td>
+</tr>
+<tr>
+<td><strong>Quitter</strong> ❌</td>
+<td>Ferme la fenêtre sans sauvegarder.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="9-regles-de-saisie-bonnes-pratiques">9. Règles de saisie &amp; Bonnes pratiques</h2>
+<ul>
+<li>Les champs marqués d’un astérisque (<code>*</code>) sont <strong>obligatoires</strong>.</li>
+<li>La validation se fait automatiquement lors de l’enregistrement.</li>
+<li>Pour les modèles complexes, utilisez <strong>la duplication</strong> pour gagner du temps.</li>
+<li>Vérifiez toujours les <strong>coloris en arrêt de production</strong> avant de valider une nomenclature.</li>
+<li>Exportez régulièrement les nomenclatures en Excel pour audit ou partage interne.</li>
+</ul>
+<hr />
+<p>✅ Vous êtes maintenant capable de gérer efficacement les fiches modèles, leurs coloris et leurs nomenclatures !</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/yourgithubusername" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
