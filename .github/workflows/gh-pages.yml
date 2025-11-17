@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -24,10 +27,13 @@ jobs:
           pip install mkdocs
           pip install mkdocs-material
 
-      # 4️⃣ Build the site (optional but recommended)
+      # 4️⃣ Build the site
       - run: mkdocs build
 
       # 5️⃣ Deploy to GitHub Pages
-      - env:
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          mkdocs gh-deploy --force --clean
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mkdocs gh-deploy --force --clean
