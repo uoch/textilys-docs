@@ -1,0 +1,71 @@
+site_name: "Textilys ERP - Guide Utilisateur"
+site_url: "https://yourgithubusername.github.io/textilys-docs/"
+theme:
+  name: material
+  palette:
+    primary: 'blue'
+    accent: 'red'
+  font:
+    text: 'Roboto'
+  logo: 'images/logo.png'
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourgithubusername
+  colors:
+    button_primary: '#687B9D'
+    button_secondary: '#F96363'
+    background_light: '#F7F9FB'
+    background_alt: '#E6EEF5'
+
+nav:
+  - Accueil: index.md
+  - Référentiel:
+      - Client: referentiel/client.md
+      - Model: referentiel/model.md
+      - FMP: referentiel/fmp.md
+      - Auxiliaire: referentiel/auxiliaire.md
+      - Gamme du produit: referentiel/gamme.md
+      - Simulation Besoins: referentiel/simulation.md
+      - Paramétrage Référentiel: referentiel/parametrage.md
+  - Commandes (Achats):
+      - Commande Client: commandes/commande_client.md
+      - Commande Fournisseur: commandes/commande_fournisseur.md
+      - Commande Ensemble: commandes/commande_ensemble.md
+      - Edition Réception: commandes/edition_reception.md
+      - Solde des Commandes: commandes/solde.md
+      - Paramétrage Commandes: commandes/parametrage.md
+  - Facturation:
+      - Facture: facturation/facture.md
+      - Prix Cession: facturation/prix_cession.md
+      - Maintenance: facturation/maintenance.md
+      - Etat: facturation/etat.md
+      - Paramétrage Facturation: facturation/parametrage.md
+  - Stock:
+      - Réception: stock/reception.md
+      - Etat de Stock: stock/etat_stock.md
+      - Paramétrage Stock: stock/parametrage.md
+  - Planning et Ordonnancement:
+      - Ordres de Fabrication: planning/ordres_fabrication.md
+      - Paramétrage: planning/parametrage.md
+  - Coupe:
+      - Cut Partner: coupe/cut_partner.md
+      - Cut Partner Planification: coupe/cut_partner_planification.md
+      - Paramétrage: coupe/parametrage.md
+  - Production:
+      - Suivi de Production: production/suivi.md
+      - Activité Atelier: production/activite_atelier.md
+      - Impression Pipelette: production/impression.md
+      - Répartition Pipelette: production/repartition.md
+      - Maintenance Production: production/maintenance.md
+      - Suivie: production/suivie.md
+      - Paramétrage: production/parametrage.md
+  - Emballage & Expédition:
+      - Activité Platform: emballage/activite_platform.md
+      - Paramétrage: emballage/parametrage.md
+  - Administration:
+      - Création des rôles utilisateurs: admin/roles.md
+      - Attribution des droits par module: admin/droits_module.md
+      - Authentification (login/mot de passe): admin/auth.md
+      - Traçabilité des modifications (audit trail): admin/audit.md
+      - Paramétrage Gestion des utilisateurs: admin/parametrage.md
