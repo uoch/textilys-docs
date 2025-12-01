@@ -35,51 +35,308 @@ extra_javascript:
 nav:
   - Accueil: index.md
   - Référentiel:
-      - Client: referentiel/client.md
-      - Model: referentiel/model.md
-      - FMP: referentiel/fmp.md
-      - Auxiliaire: referentiel/auxiliaire.md
-      - Gamme du produit: referentiel/gamme.md
-      - Simulation Besoins: referentiel/simulation.md
-      - Paramétrage Référentiel: referentiel/parametrage.md
-  - Commandes (Achats):
-      - Commande Client: commandes/commande_client.md
-      - Commande Fournisseur: commandes/commande_fournisseur.md
-      - Commande Ensemble: commandes/commande_ensemble.md
-      - Edition Réception: commandes/edition_reception.md
-      - Solde des Commandes: commandes/solde.md
-      - Paramétrage Commandes: commandes/parametrage.md
+    - Client: referentiel/client.md
+    - Auxiliaires: referentiel/auxiliaires.md
+    - Matière: referentiel/matiere.md
+    - Model: referentiel/model.md
+    - "Simulation Besoins": referentiel/simulation.md
+
+    - "Gamme produit":
+        - "Paramétrés (Opérations)": referentiel/gamme/operations.md
+        - Machine: referentiel/gamme/machine.md
+        - Gamme: referentiel/gamme/gamme.md
+        - "Paramétrage des fichiers": referentiel/gamme/fichiers.md
+        - "Affectation modèle gamme": referentiel/gamme/affectation.md
+        - "Import Gamme": referentiel/gamme/import.md
+
+    - Paramétrage:
+        - "Paramétrage Marque": referentiel/parametrage/marque.md
+        - "Paramétrage Tiers": referentiel/parametrage/tiers.md
+        - "Autres Paramétrages": referentiel/parametrage/autres.md
+
+    - Maintenance:
+        - "Historique des nomenclatures": referentiel/maintenance/historique_nomenclatures.md
+
+
+  - "Commandes (Achats)":
+      - "Commande Client": commandes/commande_client.md
+      - "Commande Fournisseur": commandes/commande_fournisseur.md
+      - "Commande Ensemble": commandes/commande_ensemble.md
+      - "Commande MRP": commandes/commandes_mrp.md
+      - "Edition réception": commandes/commandes_mrp/editrecp.md
+      - "Solde des commandes": commandes/commandes_mrp/stockdispo.md
+
+      - Validations:
+          - "Propositions d'ordre": commandes/commandes_mrp/validations/propositions.md
+          - "Proposition d'ordre d'Achat": commandes/commandes_mrp/validations/proposition_achat.md
+          - "Proposition d'ordre de Fabrication": commandes/commandes_mrp/validations/proposition_fabrication.md
+          - "Proposition d'ordre de Transformation": commandes/commandes_mrp/validations/proposition_transformation.md
+          - "Ordres d'achats": commandes/commandes_mrp/validations/ordres_achats.md
+          - "Contrôle délais dépassés": commandes/commandes_mrp/validations/controle_delais.md
+          - "Import plan xls": commandes/commandes_mrp/validations/import_plan_xls.md
+
+      - États:
+          - "Ruptures et surstocks": commandes/commandes_mrp/Etats/Ruptures_surstocks.md
+          - "Ruptures et surstocks toutes références": commandes/commandes_mrp/Etats/Ruptures_surstocks_references.md
+          - "Commandes à annuler suite à révision des PV": commandes/commandes_mrp/Etats/Commandes_annuler_revision_PV.md
+          - "Analyse détaillée des besoins": commandes/commandes_mrp/Etats/Analyse_detaillee_besoins.md
+          - "Anomalie sur import PDP": commandes/commandes_mrp/Etats/Anomalie_import_PDP.md
+          - "Vérification paramétrage MP, SE": commandes/commandes_mrp/Etats/Verification_parametrage_MP_SE.md
+          - "Vérification paramétrage Négoce": commandes/commandes_mrp/Etats/Verification_parametrage_Negoce.md
+          - "Liste des propositions annulées": commandes/commandes_mrp/Etats/Liste_propositions_annulees.md
+          - "Commandes reçues partiellement": commandes/commandes_mrp/Etats/Commandes_recues_partiellement.md
+          - "Plan en cours": commandes/commandes_mrp/Etats/Plan_cours.md
+          - "Liste des propositions d'OF": commandes/commandes_mrp/Etats/Liste_propositions_OF.md
+          - "Traces sur traitements": commandes/commandes_mrp/Etats/Traces_traitements.md
+
+      - Paramètres:
+          - "Configuration MRP": commandes/commandes_mrp/Parametres/Configuration_MRP.md
+          - "Jours fériés": commandes/commandes_mrp/Parametres/Jours_feries.md
+          - "Anomalies": commandes/commandes_mrp/Parametres/Anomalies.md
+          - "Plan": commandes/commandes_mrp/Parametres/Plan.md
+
+      - "Edition Réception": commandes/edition_reception.md
+      - "Solde des Commandes": commandes/solde.md
+      - "Paramétrage Commandes": commandes/parametrage.md
+
   - Facturation:
-      - Facture: facturation/facture.md
-      - Prix Cession: facturation/prix_cession.md
-      - Maintenance: facturation/maintenance.md
-      - Etat: facturation/etat.md
-      - Paramétrage Facturation: facturation/parametrage.md
+      - "Anomalie Traitement": facturation/anomalie_traitement.md
+      - Avoir: facturation/avoir.md
+      - "Lignes à Facturer": facturation/lignes_a_facturer.md
+      - "Suivi Facture": facturation/suivi_facture.md
+      - "Commande Service à Facturer": facturation/commande_service.md
+      - "Solde OF": facturation/solde_of.md
+      - Factures: facturation/factures.md
+
+      - "Prix de cession":
+          - "Prix de Cession Coupe au large": facturation/prix_cession/coupe_large.md
+          - "Prix de Cession Coupe au Dentelle": facturation/prix_cession/coupe_dentelle.md
+          - "Prix de Cession Co-Traitement": facturation/prix_cession/co_traitement.md
+          - "Récapitulatif Prix de cession": facturation/prix_cession/recapitulatif.md
+          - "Prix de Cession Conditionnement": facturation/prix_cession/conditionnement.md
+          - "Prix façon par Atelier (Gamme)": facturation/prix_cession/facon_atelier.md
+
+      - Maintenance:
+          - "Maintenance Facture": facturation/maintenance/maintenance_facture.md
+          - "Modification Numéro Facture": facturation/maintenance/modification_numero.md
+          - "Annulation d'un BL": facturation/maintenance/annulation_bl.md
+          - "Défaut Quantité Facture": facturation/maintenance/defaut_quantite_facture.md
+          - "Annulation d'un Barquette": facturation/maintenance/annulation_barquette.md
+          - "Défaut Quantité Lignes à Facturer": facturation/maintenance/defaut_quantite_lignes.md
+          - "Suppression d'une ligne de Facture": facturation/maintenance/suppression_ligne.md
+          - "Transfert du Factures": facturation/maintenance/transfert_factures.md
+          - "Modification Prix d'une Ligne de Facture": facturation/maintenance/modification_prix_ligne.md
+          - "Transfert et Fusion de Facture": facturation/maintenance/transfert_fusion.md
+          - "Modification Date Facture": facturation/maintenance/modification_date.md
+          - "Dévalider une Facture": facturation/maintenance/devalider_facture.md
+
+      - Etat:
+          - "Liste des BLs": facturation/etat/liste_bls.md
+          - "Quantités Facturées par Modèle": facturation/etat/quantites_par_modele.md
+          - "Quantités Facturées par Prix": facturation/etat/quantites_par_prix.md
+
+      - Paramétrage:
+          - Système:
+              - "Paramétrage Société": facturation/parametrage/systeme/param_societe.md
+              - Service: facturation/parametrage/systeme/service.md
+              - "Coût Société": facturation/parametrage/systeme/cout_societe.md
+              - Atelier: facturation/parametrage/systeme/atelier.md
+
+          - "Gestion Client":
+              - "Type de règlement": facturation/parametrage/gestion_client/type_reglement.md
+              - Vendeur: facturation/parametrage/gestion_client/vendeur.md
+              - Échéance: facturation/parametrage/gestion_client/echeance.md
+              - Pays: facturation/parametrage/gestion_client/pays.md
+              - Devise: facturation/parametrage/gestion_client/devise.md
+              - "Statut assurance": facturation/parametrage/gestion_client/statut_assurance.md
+              - "Type de Facturation": facturation/parametrage/gestion_client/type_facturation.md
+              - "Zone géographique": facturation/parametrage/gestion_client/zone_geographique.md
+              - "Type d'activité": facturation/parametrage/gestion_client/type_activite.md
+              - "Qualification client": facturation/parametrage/gestion_client/qualification_client.md
+              - Représentant: facturation/parametrage/gestion_client/representant.md
+              - "Type d'adresse": facturation/parametrage/gestion_client/type_adresse.md
+
+      - Devise: facturation/parametrage/devise.md
+
+  - Conditionnement:
+      - "Exemple": conditionnement/example.md # placeholder
+
   - Stock:
-      - Réception: stock/reception.md
-      - Etat de Stock: stock/etat_stock.md
-      - Paramétrage Stock: stock/parametrage.md
-  - Planning et Ordonnancement:
-      - Ordres de Fabrication: planning/ordres_fabrication.md
-      - Paramétrage: planning/parametrage.md
+      - "Exemple": stock/example.md # placeholder
+
+  - Planning:
+      - "Création OF CMD": planning/creation_of_cmd.md
+      - "Simulation OF": planning/simulation_of.md
+      - "Fabrication OF": planning/fabrication_of.md
+      - "Solde OF": planning/solde_of.md
+      - "Consultation Planning": planning/consultation_planning.md
+      - "Tableau de Bord": planning/tableau_de_board.md
+      - "Création OF Prévisionnel": planning/creation_of_previsionnel.md
+      - "Modification OF Prévisionnel": planning/modif_of_previsionnel.md
+      - "Simulation OF Prévisionnel": planning/simulation_of_previsionnel.md
+
+      - Maintenance:
+          - "Déverrouiller un Groupe": planning/maintenance/deverrouiller_un_groupe.md
+          - "Réparation Planning": planning/maintenance/reparation_planning.md
+          - "Changement de Destination": planning/maintenance/changement_de_destination.md
+          - "Changement Atelier Coupe": planning/maintenance/changement_atelier_coupe.md
+          - "Changement Atelier Dentelle": planning/maintenance/changement_atelier_dentelle.md
+          - "Régénération Liste à Servir": planning/maintenance/regeneration_liste_a_servir.md
+          - "Changement Atelier": planning/maintenance/changement_atelier.md
+          - "Droit SVP": planning/maintenance/droit_svp.md
+          - "Synchronisation Tiers 0001 → 0015": planning/maintenance/synchronisation_tiers_0001_0015.md
+
+      - Edition Planning:
+          - "OFs à Lancer": planning/edition_planning/ofs_a_lancer.md
+          - "OFs à Stocker": planning/edition_planning/ofs_a_stocker.md
+          - "Planning Prévisionnel - Étapes": planning/edition_planning/planning_previsionnel_etapes.md
+          - "Retard au Lancement": planning/edition_planning/retard_au_lancement.md
+          - "Retard de Coupe": planning/edition_planning/retard_de_coupe.md
+          - "Retard Date Confirmée": planning/edition_planning/retard_date_confirmee.md
+          - "Retard Date Souhaitée": planning/edition_planning/retard_date_souhaitee.md
+          - "Date Limite Lancement sans Rupture": planning/edition_planning/date_limite_lancement_sans_rupture.md
+          - "Suivi des En-cours": planning/edition_planning/suivi_des_en_cours.md
+          - "Anomalies": planning/edition_planning/anomalies.md
+          - "Anomalies sur Flux Global": planning/edition_planning/anomalies_sur_flux_global.md
+          - "Manquants OFs Validés": planning/edition_planning/manquants_ofs_valides.md
+          - "Historique Modifications OFs": planning/edition_planning/historique_modifications_ofs.md
+          - "Édition Tableau de Bord": planning/edition_planning/edition_tableau_de_board.md
+          - "Flux de Production": planning/edition_planning/flux_de_production.md
+          - "Flux de Chaîne": planning/edition_planning/flux_de_chaine.md
+          - "Flux Atelier": planning/edition_planning/flux_atelier.md
+
+      - Suivi:
+          - "Suivi en Cours": planning/suivi/suivi_en_cours.md
+          - "Production Terminée": planning/suivi/production_terminee.md
+
+      - Edition Suivi:
+          - "Edition OFs Créés": planning/edition_suivi/edition_ofs_crees.md
+          - "Edition Étape": planning/edition_suivi/edition_etape.md
+          - "Entrée/Sortie Chaîne Montage": planning/edition_suivi/edition_entree_sortie_chaine_montage.md
+          - "Suivi SVP": planning/edition_suivi/suivi_svp.md
+          - "Suivi Négoce": planning/edition_suivi/suivi_negoce.md
+          - "Synthèse Valorisé": planning/edition_suivi/synthese_valorisee.md
+          - "Historique des OFs Soldes": planning/edition_suivi/Historique_Soldes.md
+          - "Statistiques de Production ": planning/edition_suivi/Statistiques_Production.md
+          - "Edition Récapitulatif Entrée en Stock": planning/edition_suivi/Edition_Récapitulatif_Entrée_Stock.md
+
   - Coupe:
-      - Cut Partner: coupe/cut_partner.md
-      - Cut Partner Planification: coupe/cut_partner_planification.md
-      - Paramétrage: coupe/parametrage.md
-  - Production:
-      - Suivi de Production: production/suivi.md
-      - Activité Atelier: production/activite_atelier.md
-      - Impression Pipelette: production/impression.md
-      - Répartition Pipelette: production/repartition.md
-      - Maintenance Production: production/maintenance.md
-      - Suivie: production/suivie.md
-      - Paramétrage: production/parametrage.md
-  - Emballage & Expédition:
-      - Activité Platform: emballage/activite_platform.md
-      - Paramétrage: emballage/parametrage.md
-  - Administration:
-      - Création des rôles utilisateurs: admin/roles.md
-      - Attribution des droits par module: admin/droits_module.md
-      - Authentification (login/mot de passe): admin/auth.md
-      - Traçabilité des modifications (audit trail): admin/audit.md
-      - Paramétrage Gestion des utilisateurs: admin/parametrage.md
+      - Etude Coupe:
+          - "Lancement": coupe/etude/lancement.md
+          - Décomposition du L:
+              - "Paramétrage Modèle": coupe/etude/decomposition/parametrage_modele.md
+              - "Décomposition": coupe/etude/decomposition/decomposition.md
+              - "Définition Du L": coupe/etude/decomposition/definition_du_l.md
+              - "Édition": coupe/etude/decomposition/edition.md
+          - Génération Matelas:
+              - "Création": coupe/etude/generation_matelas/creation.md
+              - "Feuilles Matelassages": coupe/etude/generation_matelas/feuilles_matelassages.md
+              - "Matelas et Besoins Matières": coupe/etude/generation_matelas/matelas_besoins_matieres.md
+          - Transfert:
+              - "Placement": coupe/etude/transfert/placement.md
+              - "Sortie Matière": coupe/etude/transfert/sortie_matiere.md
+              - "Planification": coupe/etude/transfert/planification.md
+
+      - Suivi Coupe:
+          - Suivi Matelassage:
+              - "Suivi": coupe/suivi/matelassage/suivi.md
+          - Récapitulatif:
+              - "Édition": coupe/suivi/matelassage/recap/edition.md
+              - "Réédition": coupe/suivi/matelassage/recap/reedition.md
+              - "Consultation": coupe/suivi/matelassage/recap/consultation.md
+          - Fiche Paquet:
+              - "Fiche Paquet": coupe/fiche_paquet/fiche_paquet.md
+          - Expéditions:
+              - "Bon Livraison": coupe/expeditions/bon_livraison.md
+              - "Sérigraphie Envoi/Réception": coupe/expeditions/serigraphie_envoi_reception.md
+              - "Colisage": coupe/expeditions/colisage.md
+              - "Édition Récap Colis pour un Atelier": coupe/expeditions/edition_recap_colis.md
+              - "Validation Départ": coupe/expeditions/validation_depart.md
+              - "Suivi Expéditions": coupe/expeditions/suivi_expeditions.md
+              - "Création/Modification Carton": coupe/expeditions/creation_modification_carton.md
+              - "Expédition Pièces à Montrer": coupe/expeditions/expedition_pieces_montrer.md
+
+      - Paramétrage:
+          - Paramétrage Étude de Coupe:
+              - Matelassage:
+                  - "Matelassage": coupe/parametrage/etude/matelassage.md
+              - Coupe:
+                  - "Coupe": coupe/parametrage/etude/coupe.md
+              - Placement:
+                  - "Temps Préparation": coupe/parametrage/etude/placement/tps_preparation.md
+                  - "Algorithme Placement Automatique": coupe/parametrage/etude/placement/algorithme_auto.md
+                  - "Modification Modèle CAO": coupe/parametrage/etude/placement/modif_modele_cao.md
+                  - "Chemins Lectra": coupe/parametrage/etude/placement/chemins_lectra.md
+              - Planification:
+                  - "Définition Lettre": coupe/parametrage/etude/planification/definition_lettre.md
+              - Type de colisage:
+                  - "Type de colisage": coupe/parametrage/etude/type_colisage.md
+              - Matières / Matelas:
+                  - "Matières / Matelas": coupe/parametrage/etude/matieres_matelas.md
+          - Suivi à la Coupe:
+              - "Lettre Colis Marque": coupe/parametrage/suivi/lettre_colis_marque.md
+
+      - Sous de Coupe:
+          - "Historique Action": coupe/cut_partner/historique_action.md
+          - Matelas:
+              - "Lister / Planifier": coupe/cut_partner/matelas/lister_planifier.md
+              - "Changer Atelier": coupe/cut_partner/matelas/changer_atelier.md
+          - Paramétrage:
+              - Matelasseurs: coupe/cut_partner/parametrage/matelasseurs.md
+              - Jours Fériés: coupe/cut_partner/parametrage/jours_feries.md
+              - Coupes: coupe/cut_partner/parametrage/coupes.md
+          - Ressources:
+              - Atelier:
+                  - "Supprimer Atelier": coupe/cut_partner/ressources/atelier/supprimer_atelier.md
+                  - "Configurer Atelier": coupe/cut_partner/ressources/atelier/configurer_atelier.md
+                  - "Configuration Codes Couleur": coupe/cut_partner/ressources/atelier/configuration_codes_couleur.md
+              - Profil Horaire: coupe/cut_partner/ressources/profil_horaire.md
+              - Configuration Tiers: coupe/cut_partner/ressources/configuration_tiers.md
+              - Profil Semaine: coupe/cut_partner/ressources/profil_semaine.md
+          - Maintenance: coupe/cut_partner/maintenance.md
+
+      - Presse:
+          - "Suivi En Cours Dentelle": coupe/presse/suivi_en_cours_dentelle.md
+          - Edition: coupe/presse/edition.md
+          - "Impression Ticket Production Dentelle":
+              - "Impression": coupe/presse/impression_ticket_production_dentelle/impression.md
+              - "Réimpression": coupe/presse/impression_ticket_production_dentelle/reimpression.md
+              - "Liste des Tickets Non Générés": coupe/presse/impression_ticket_production_dentelle/liste_tickets_non_generes.md
+              - "Impression des Paquets": coupe/presse/impression_ticket_production_dentelle/impression_paquets.md
+          - Paramétrage:
+              - Morceaux: coupe/presse/parametrage/morceaux.md
+              - Imprimante Zebra: coupe/presse/parametrage/imprimante_zebra.md
+              - Modèles: coupe/presse/parametrage/modeles.md
+              - Impression Tickets Prod Dentelle: coupe/presse/parametrage/impression_tickets_prod_dentelle.md
+
+      - Moulage:
+          - Edition: coupe/moulage/edition.md
+          - "Impression des Tickets": coupe/moulage/impression_des_tickets.md
+          - "Réimpression des Tickets": coupe/moulage/reimpression_des_tickets.md
+          - "Impression des Fiches Paquet": coupe/moulage/impression_fiches_paquet.md
+          - Paramétrage:
+              - Bonnet Moule: coupe/moulage/parametrage/bonnet_moule.md
+
+      - Maintenance:
+          - Maintenance Etude Coupe:
+              - Changement RAR: coupe/maintenance/etude_coupe/changement_rar.md
+              - Annuler un Matelas: coupe/maintenance/etude_coupe/annuler_un_matelas.md
+              - Changement Lg Max Matelas: coupe/maintenance/etude_coupe/changement_lg_max_matelas.md
+              - Effacer Paramétrage du L: coupe/maintenance/etude_coupe/effacer_parametrage_du_l.md
+              - Changement Laize Matelas: coupe/maintenance/etude_coupe/changement_laize_matelas.md
+              - Solder un L de Coupe Extérieure: coupe/maintenance/etude_coupe/solder_un_l_de_coupe_exterieure.md
+              - Création Nouveau Trace: coupe/maintenance/etude_coupe/creation_nouveau_trace.md
+              - Réimpression Feuilles de Matelassage: coupe/maintenance/etude_coupe/reimpression_feuilles_de_matelassage.md
+              - Créer une Référence de Substitution: coupe/maintenance/etude_coupe/creer_une_reference_de_substitution.md
+              - Mettre un L à l'État LANCE: coupe/maintenance/etude_coupe/mettre_un_l_a_etat_lance.md
+          - Maintenance Suivi Matelassage:
+              - Annulation d'un Matelas: coupe/maintenance/suivi_matelassage/annulation_un_matelas.md
+              - Modification du Nombre de Plis Réalisés: coupe/maintenance/suivi_matelassage/modification_nombre_plis_realises.md
+              - Régénérer Synthèse Récap: coupe/maintenance/suivi_matelassage/regenere_synthese_recap.md
+          - Maintenance Suivi Coupe:
+              - Retour de Coupe: coupe/maintenance/suivi_coupe/retour_de_coupe.md
+              - Annuler Facture Proforma: coupe/maintenance/suivi_coupe/annuler_facture_proforma.md
+              - Fiches Paquets: coupe/maintenance/suivi_coupe/fiches_paquets.md
+              - Annuler un OF d'un BL: coupe/maintenance/suivi_coupe/annuler_of_bl.md
+              - Suppression d'un BL: coupe/maintenance/suivi_coupe/suppression_bl.md
+              - Suppression Carton sans Ligne: coupe/maintenance/suivi_coupe/suppression_carton_sans
