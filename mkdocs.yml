@@ -1,5 +1,5 @@
 site_name: "Textilys ERP - Guide Utilisateur"
-site_url: "https://yourgithubusername.github.io/textilys-docs/"
+site_url: "https://uoch.github.io/textilys-docs/"
 theme:
   name: material
   palette:
