@@ -1,20 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // The plugin adds .decrypt-success when content is decrypted
     const observer = new MutationObserver(() => {
         const decrypted = document.querySelector(".decrypt-success");
         if (decrypted) {
-            // Select all sidebars
-            const sidebars = document.querySelectorAll(
-                ".md-sidebar.md-sidebar--primary, .md-sidebar--primary, [data-md-component='sidebar'][data-md-type='navigation'], .md-sidebar.md-sidebar--secondary, .md-sidebar--secondary, [data-md-component='sidebar'][data-md-type='toc']"
-            );
-            sidebars.forEach(sb => {
-                sb.classList.add("decrypt-success-visible");
-            });
+            const sidebar = document.querySelector(".md-sidebar");
+            if (sidebar) {
+                sidebar.style.display = "block";
+            }
         }
     });
 
     observer.observe(document.body, {
         subtree: true,
-        attributes: true,
-        attributeFilter: ["class"]
+        attributes: true
     });
 });
