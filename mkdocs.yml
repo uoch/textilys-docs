@@ -1,6 +1,5 @@
 site_name: "Textilys ERP - Guide Utilisateur"
-site_url: "https://uoch.github.io/textilys-docs/"
-
+site_url: "https://yourgithubusername.github.io/textilys-docs/"
 theme:
   name: material
   palette:
@@ -9,10 +8,6 @@ theme:
   font:
     text: 'Roboto'
   logo: 'images/logo.png'
-  features:
-    - navigation.sections
-    - navigation.expand
-
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -22,23 +17,6 @@ extra:
     button_secondary: '#F96363'
     background_light: '#F7F9FB'
     background_alt: '#E6EEF5'
-
-plugins:
-  - search
-  - encryptcontent:
-      global_password: "123"
-      title_prefix: ""
-      summary: "Veuillez entrer le mot de passe pour accéder au guide."
-      placeholder: "Mot de passe"
-      button_text: "Accéder"
-      remember_password: false
-
-
-extra_css:
-  - stylesheets/extra.css
-
-extra_javascript:
-  - javascripts/extra.js
 
 nav:
   - Accueil: index.md
