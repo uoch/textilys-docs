@@ -18,7 +18,7 @@ extra:
     background_light: '#F7F9FB'
     background_alt: '#E6EEF5'
 plugins:
-  - simple-password:
+  - password-protect:
       password: "123"
 nav:
   - Accueil: index.md
