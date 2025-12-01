@@ -18,8 +18,13 @@ extra:
     background_light: '#F7F9FB'
     background_alt: '#E6EEF5'
 plugins:
-  - password-protect:
-      password: "123"
+  - search
+  - encryptcontent:
+      global_password: "123"
+      title_prefix: ""        # optional
+      summary: "Veuillez entrer le mot de passe pour accéder au guide."
+      placeholder: "Mot de passe"
+      button_text: "Accéder"
 nav:
   - Accueil: index.md
   - Référentiel:
