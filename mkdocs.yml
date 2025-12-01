@@ -17,7 +17,9 @@ extra:
     button_secondary: '#F96363'
     background_light: '#F7F9FB'
     background_alt: '#E6EEF5'
-
+plugins:
+  - simple-password:
+      password: "123"
 nav:
   - Accueil: index.md
   - Référentiel:
