@@ -9,7 +9,10 @@ theme:
   font:
     text: 'Roboto'
   logo: 'images/logo.png'
-  custom_dir: overrides      
+  custom_dir: overrides
+  features:
+    - navigation.sections
+    - navigation.expand
 
 extra:
   social:
@@ -29,12 +32,17 @@ plugins:
       summary: "Veuillez entrer le mot de passe pour accéder au guide."
       placeholder: "Mot de passe"
       button_text: "Accéder"
+      # Add these options to help with hiding content
+      encrypted_something:
+        md-sidebar: "hide"
+      remember_password: false
+      reload_scripts: true
 
 extra_css:
-  - overrides/extra.css      
+  - overrides/extra.css
 
 extra_javascript:
-  - overrides/extra.js       
+  - overrides/extra.js
 
 nav:
   - Accueil: index.md

@@ -1,11 +1,37 @@
+// Immediately hide sidebars on load (before DOM is ready)
+(function() {
+    // Add style immediately
+    const style = document.createElement('style');
+    style.textContent = `
+        .md-sidebar, 
+        .md-sidebar--primary, 
+        .md-sidebar--secondary,
+        [data-md-component="sidebar"] {
+            display: none !important;
+            visibility: hidden !important;
+        }
+    `;
+    document.head.appendChild(style);
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
-    const observer = new MutationObserver(() => {
+    // Check if already decrypted (from previous session)
+    if (document.querySelector(".decrypt-success")) {
+        document.body.classList.add("password-accepted");
+        return;
+    }
+
+    // Monitor for password success
+    const observer = new MutationObserver((mutations) => {
+        // Check for decrypt-success class
         const decrypted = document.querySelector(".decrypt-success");
-        if (decrypted) {
-            // Add class to body to trigger CSS showing sidebars
+        
+        // Also check for encryptcontent wrapper being removed
+        const encryptWrapper = document.querySelector("#mkdocs-decrypted-content");
+        
+        if (decrypted || (encryptWrapper && encryptWrapper.children.length > 0)) {
+            console.log("Password accepted - showing sidebars");
             document.body.classList.add("password-accepted");
-            
-            // Stop observing once password is accepted
             observer.disconnect();
         }
     });
@@ -13,6 +39,16 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(document.body, {
         subtree: true,
         attributes: true,
-        childList: true
+        childList: true,
+        attributeFilter: ['class']
+    });
+
+    // Also listen for custom events from encryptcontent plugin
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            if (document.querySelector(".decrypt-success")) {
+                document.body.classList.add("password-accepted");
+            }
+        }, 100);
     });
 });
