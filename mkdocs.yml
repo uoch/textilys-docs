@@ -37,10 +37,10 @@ plugins:
         - overrides/extra.js
 
 extra_css:
-  - overrides/extra.css
+  - stylesheets/extra.css
 
 extra_javascript:
-  - overrides/extra.js
+  - javascripts/extra.js
 
 nav:
   - Accueil: index.md
