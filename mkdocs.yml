@@ -17,7 +17,14 @@ extra:
     button_secondary: '#F96363'
     background_light: '#F7F9FB'
     background_alt: '#E6EEF5'
-
+plugins:
+  - search
+  - encryptcontent:
+      global_password: "YourStrongPassword123"
+      title_prefix: ""        # optional
+      summary: "Veuillez entrer le mot de passe pour accéder au guide."
+      placeholder: "Mot de passe"
+      button_text: "Accéder"
 nav:
   - Accueil: index.md
   - Référentiel:

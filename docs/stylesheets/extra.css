@@ -1,0 +1,4 @@
+/* Hide the entire navigation sidebar until decryption */
+.md-sidebar {
+    display: none !important;
+}
