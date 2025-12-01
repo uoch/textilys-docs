@@ -1,0 +1,4 @@
+/* Hide sidebar menu until password is correct */
+.md-sidebar {
+    display: none !important;
+}
