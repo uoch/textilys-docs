@@ -2,28 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const observer = new MutationObserver(() => {
         const decrypted = document.querySelector(".decrypt-success");
         if (decrypted) {
-            // Show primary sidebar (navigation menu)
-            const primarySidebar = document.querySelector(".md-sidebar--primary");
-            if (primarySidebar) {
-                primarySidebar.style.display = "block";
-            }
+            // Add class to body to trigger CSS showing sidebars
+            document.body.classList.add("password-accepted");
             
-            // Show secondary sidebar (table of contents)
-            const secondarySidebar = document.querySelector(".md-sidebar--secondary");
-            if (secondarySidebar) {
-                secondarySidebar.style.display = "block";
-            }
-            
-            // Show generic sidebar (fallback)
-            const sidebar = document.querySelector(".md-sidebar");
-            if (sidebar) {
-                sidebar.style.display = "block";
-            }
+            // Stop observing once password is accepted
+            observer.disconnect();
         }
     });
 
     observer.observe(document.body, {
         subtree: true,
-        attributes: true
+        attributes: true,
+        childList: true
     });
 });

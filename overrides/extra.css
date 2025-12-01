@@ -1,13 +1,23 @@
-
 /* Hide sidebar menu and table of contents until password is correct */
-.md-sidebar {
+.md-sidebar,
+.md-sidebar--primary,
+.md-sidebar--secondary,
+.md-nav--primary,
+.md-nav--secondary {
     display: none !important;
 }
 
-.md-sidebar--primary {
+/* Also hide the table of contents container */
+.md-sidebar__scrollwrap {
     display: none !important;
 }
 
-.md-sidebar--secondary {
-    display: none !important;
+/* Show sidebars only when password is accepted */
+body.password-accepted .md-sidebar,
+body.password-accepted .md-sidebar--primary,
+body.password-accepted .md-sidebar--secondary,
+body.password-accepted .md-nav--primary,
+body.password-accepted .md-nav--secondary,
+body.password-accepted .md-sidebar__scrollwrap {
+    display: block !important;
 }
