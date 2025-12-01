@@ -1,16 +1,11 @@
-/* CRITICAL: Hide all navigation elements before password entry */
-/* Use visibility and opacity instead of display to preserve structure */
+/* ================================================
+   PASSWORD PROTECTION SIDEBAR HIDE SYSTEM (CSS)
+   ================================================ */
 
-/* Hide left sidebar (main navigation) */
+/* Hide navigation and TOC before password */
 .md-sidebar.md-sidebar--primary,
 .md-sidebar--primary,
-[data-md-component="sidebar"][data-md-type="navigation"] {
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-}
-
-/* Hide right sidebar (table of contents) */
+[data-md-component="sidebar"][data-md-type="navigation"],
 .md-sidebar.md-sidebar--secondary,
 .md-sidebar--secondary,
 [data-md-component="sidebar"][data-md-type="toc"],
@@ -18,13 +13,13 @@
     visibility: hidden !important;
     opacity: 0 !important;
     pointer-events: none !important;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* SHOW everything when password is accepted */
-body.password-accepted .md-sidebar.md-sidebar--primary,
+/* When password is accepted — show everything */
+body.password-accepted .md-sidebar,
 body.password-accepted .md-sidebar--primary,
 body.password-accepted [data-md-component="sidebar"][data-md-type="navigation"],
-body.password-accepted .md-sidebar.md-sidebar--secondary,
 body.password-accepted .md-sidebar--secondary,
 body.password-accepted [data-md-component="sidebar"][data-md-type="toc"],
 body.password-accepted [data-md-component="toc"] {
@@ -33,7 +28,14 @@ body.password-accepted [data-md-component="toc"] {
     pointer-events: auto !important;
 }
 
-/* Smooth transition when showing */
-body.password-accepted .md-sidebar {
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+/* Optional: hide content blur until password is valid */
+body:not(.password-accepted) .md-content {
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+body.password-accepted .md-content {
+    filter: none;
+    pointer-events: auto;
 }
