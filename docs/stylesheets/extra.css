@@ -1,23 +1,39 @@
-/* Hide sidebar menu and table of contents until password is correct */
-.md-sidebar,
+/* CRITICAL: Hide all navigation elements before password entry */
+/* Use visibility and opacity instead of display to preserve structure */
+
+/* Hide left sidebar (main navigation) */
+.md-sidebar.md-sidebar--primary,
 .md-sidebar--primary,
+[data-md-component="sidebar"][data-md-type="navigation"] {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Hide right sidebar (table of contents) */
+.md-sidebar.md-sidebar--secondary,
 .md-sidebar--secondary,
-.md-nav--primary,
-.md-nav--secondary {
-    display: none !important;
+[data-md-component="sidebar"][data-md-type="toc"],
+[data-md-component="toc"] {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
 }
 
-/* Also hide the table of contents container */
-.md-sidebar__scrollwrap {
-    display: none !important;
-}
-
-/* Show sidebars only when password is accepted */
-body.password-accepted .md-sidebar,
+/* SHOW everything when password is accepted */
+body.password-accepted .md-sidebar.md-sidebar--primary,
 body.password-accepted .md-sidebar--primary,
+body.password-accepted [data-md-component="sidebar"][data-md-type="navigation"],
+body.password-accepted .md-sidebar.md-sidebar--secondary,
 body.password-accepted .md-sidebar--secondary,
-body.password-accepted .md-nav--primary,
-body.password-accepted .md-nav--secondary,
-body.password-accepted .md-sidebar__scrollwrap {
-    display: block !important;
+body.password-accepted [data-md-component="sidebar"][data-md-type="toc"],
+body.password-accepted [data-md-component="toc"] {
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+/* Smooth transition when showing */
+body.password-accepted .md-sidebar {
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
