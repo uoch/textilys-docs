@@ -9,7 +9,6 @@ theme:
   font:
     text: 'Roboto'
   logo: 'images/logo.png'
-  custom_dir: overrides
   features:
     - navigation.sections
     - navigation.expand
