@@ -33,8 +33,7 @@ plugins:
       placeholder: "Mot de passe"
       button_text: "Accéder"
       remember_password: false
-      reload_scripts:
-        - overrides/extra.js
+
 
 extra_css:
   - stylesheets/extra.css
