@@ -1,4 +1,4 @@
-/* Hide primary navigation and TOC by default */
+/* CRITICAL: Hide sidebars by default (before password entry) */
 .md-sidebar.md-sidebar--primary,
 .md-sidebar--primary,
 [data-md-component="sidebar"][data-md-type="navigation"],
@@ -8,10 +8,11 @@
     visibility: hidden !important;
     opacity: 0 !important;
     pointer-events: none !important;
-    transition: opacity 0.3s ease;
+    display: none !important;
+    transition: none !important;
 }
 
-/* Show sidebars after password */
+/* Show sidebars ONLY after successful password entry */
 .md-sidebar.show-sidebars,
 .md-sidebar--primary.show-sidebars,
 [data-md-component="sidebar"][data-md-type="navigation"].show-sidebars,
@@ -20,4 +21,13 @@
     visibility: visible !important;
     opacity: 1 !important;
     pointer-events: auto !important;
+    display: block !important;
+}
+
+/* Ensure password form is always visible */
+.decryptcontent {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 50vh !important;
 }
