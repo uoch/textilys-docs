@@ -32,11 +32,9 @@ plugins:
       summary: "Veuillez entrer le mot de passe pour accéder au guide."
       placeholder: "Mot de passe"
       button_text: "Accéder"
-      # Add these options to help with hiding content
-      encrypted_something:
-        md-sidebar: "hide"
       remember_password: false
-      reload_scripts: true
+      reload_scripts:
+        - overrides/extra.js
 
 extra_css:
   - overrides/extra.css
