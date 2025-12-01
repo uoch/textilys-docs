@@ -11,8 +11,12 @@
     transition: opacity 0.3s ease;
 }
 
-/* Class to show sidebars after decryption */
-.show-sidebars {
+/* Show sidebars after password */
+.md-sidebar.show-sidebars,
+.md-sidebar--primary.show-sidebars,
+[data-md-component="sidebar"][data-md-type="navigation"].show-sidebars,
+.md-sidebar--secondary.show-sidebars,
+[data-md-component="sidebar"][data-md-type="toc"].show-sidebars {
     visibility: visible !important;
     opacity: 1 !important;
     pointer-events: auto !important;

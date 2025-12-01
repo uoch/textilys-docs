@@ -3,7 +3,7 @@
 > **C’est plus qu’un logiciel !**  
 > Une solution complète, intuitive et réactive, pensée pour les acteurs du textile : fabricants, fournisseurs, ateliers, commerciaux et gestionnaires.
 
-![Bannière TEXTILYS — L'ERP conçu pour le textile](images/banner_textilys.jpg)
+<!-- ![Bannière TEXTILYS — L'ERP conçu pour le textile](images/banner_textilys.jpg) -->
 
 ---
 

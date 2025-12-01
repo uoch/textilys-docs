@@ -20,7 +20,7 @@ extra:
 plugins:
   - search
   - encryptcontent:
-      global_password: "YourStrongPassword123"
+      global_password: "123"
       title_prefix: ""        # optional
       summary: "Veuillez entrer le mot de passe pour accéder au guide."
       placeholder: "Mot de passe"
