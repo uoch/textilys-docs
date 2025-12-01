@@ -12,26 +12,47 @@
         }
     `;
     document.head.appendChild(style);
+    console.log("Sidebars hidden on initial load");
 })();
 
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM loaded - checking for encryption status");
+    
+    // Function to show sidebars
+    function showSidebars() {
+        console.log("✅ Password accepted - showing sidebars");
+        document.body.classList.add("password-accepted");
+    }
+    
     // Check if already decrypted (from previous session)
     if (document.querySelector(".decrypt-success")) {
-        document.body.classList.add("password-accepted");
+        console.log("Already decrypted");
+        showSidebars();
         return;
     }
 
-    // Monitor for password success
+    // Monitor for password success - check multiple possible indicators
     const observer = new MutationObserver((mutations) => {
-        // Check for decrypt-success class
+        // Method 1: Check for decrypt-success class
         const decrypted = document.querySelector(".decrypt-success");
         
-        // Also check for encryptcontent wrapper being removed
+        // Method 2: Check for encryptcontent-specific elements
+        const encryptForm = document.querySelector("form[class*='decrypt']");
         const encryptWrapper = document.querySelector("#mkdocs-decrypted-content");
         
-        if (decrypted || (encryptWrapper && encryptWrapper.children.length > 0)) {
-            console.log("Password accepted - showing sidebars");
-            document.body.classList.add("password-accepted");
+        // Method 3: Check if password form disappeared
+        const passwordInput = document.querySelector("input[type='password']");
+        
+        console.log("Mutation detected:", {
+            decrypted: !!decrypted,
+            encryptForm: !!encryptForm,
+            encryptWrapper: !!encryptWrapper,
+            passwordInput: !!passwordInput
+        });
+        
+        // If decrypt-success exists OR password form is gone, show sidebars
+        if (decrypted || (!passwordInput && document.querySelector(".md-content"))) {
+            showSidebars();
             observer.disconnect();
         }
     });
@@ -40,15 +61,25 @@ document.addEventListener("DOMContentLoaded", () => {
         subtree: true,
         attributes: true,
         childList: true,
-        attributeFilter: ['class']
+        attributeFilter: ['class', 'style']
     });
 
-    // Also listen for custom events from encryptcontent plugin
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            if (document.querySelector(".decrypt-success")) {
-                document.body.classList.add("password-accepted");
-            }
-        }, 100);
-    });
+    // Backup method: Check periodically
+    let checkCount = 0;
+    const interval = setInterval(() => {
+        checkCount++;
+        console.log(`Check ${checkCount}: Looking for password acceptance...`);
+        
+        if (!document.querySelector("input[type='password']") && 
+            document.querySelector(".md-content")) {
+            console.log("Password form gone - assuming success");
+            showSidebars();
+            clearInterval(interval);
+        }
+        
+        if (checkCount > 50) { // Stop after 5 seconds
+            console.log("Stopped checking");
+            clearInterval(interval);
+        }
+    }, 100);
 });
