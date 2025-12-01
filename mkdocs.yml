@@ -25,6 +25,13 @@ plugins:
       summary: "Veuillez entrer le mot de passe pour accéder au guide."
       placeholder: "Mot de passe"
       button_text: "Accéder"
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
 nav:
   - Accueil: index.md
   - Référentiel:
