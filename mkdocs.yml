@@ -36,68 +36,123 @@ nav:
   - Accueil: index.md
   - Référentiel:
     - Client: referentiel/client.md
-    - Auxiliaires: referentiel/auxiliaires.md
-    - Matière: referentiel/matiere.md
+    - Auxiliaires: referentiel/auxiliaire.md
+    - Matière: referentiel/fmp.md
     - Model: referentiel/model.md
     - "Simulation Besoins": referentiel/simulation.md
 
     - "Gamme produit":
-        - "Paramétrés (Opérations)": referentiel/gamme/operations.md
-        - Machine: referentiel/gamme/machine.md
-        - Gamme: referentiel/gamme/gamme.md
-        - "Paramétrage des fichiers": referentiel/gamme/fichiers.md
-        - "Affectation modèle gamme": referentiel/gamme/affectation.md
-        - "Import Gamme": referentiel/gamme/import.md
+        #- "Paramétrés (Opérations)": referentiel/gamme/operations.md
+        #- Machine: referentiel/gamme/machine.md
+        - Gamme: referentiel\gamme.md
+        #- "Paramétrage des fichiers": referentiel/gamme/fichiers.md
+        #- "Affectation modèle gamme": referentiel/gamme/affectation.md
+        #- "Import Gamme": referentiel/gamme/import.md
 
-    - Paramétrage:
-        - "Paramétrage Marque": referentiel/parametrage/marque.md
-        - "Paramétrage Tiers": referentiel/parametrage/tiers.md
-        - "Autres Paramétrages": referentiel/parametrage/autres.md
+    # - Paramétrage:
+    #     - "Paramétrage Marque": referentiel/parametrage/marque.md
+    #     - "Paramétrage Tiers": referentiel/parametrage/tiers.md
+    #     - "Autres Paramétrages": referentiel/parametrage/autres.md
 
-    - Maintenance:
-        - "Historique des nomenclatures": referentiel/maintenance/historique_nomenclatures.md
+    # - Maintenance:
+    #     - "Historique des nomenclatures": referentiel/maintenance/historique_nomenclatures.md
 
 
   - "Commandes (Achats)":
       - "Commande Client": commandes/commande_client.md
       - "Commande Fournisseur": commandes/commande_fournisseur.md
-      - "Commande Ensemble": commandes/commande_ensemble.md
-      - "Commande MRP": commandes/commandes_mrp.md
-      - "Edition réception": commandes/commandes_mrp/editrecp.md
-      - "Solde des commandes": commandes/commandes_mrp/stockdispo.md
+    #   - "Commande Ensemble": commandes/commande_ensemble.md
+    #   - "Commande MRP": commandes/commandes_mrp.md
+    #   - "Edition réception": commandes/commandes_mrp/editrecp.md
+    #   - "Solde des commandes": commandes/commandes_mrp/stockdispo.md
 
-      - Validations:
-          - "Propositions d'ordre": commandes/commandes_mrp/validations/propositions.md
-          - "Proposition d'ordre d'Achat": commandes/commandes_mrp/validations/proposition_achat.md
-          - "Proposition d'ordre de Fabrication": commandes/commandes_mrp/validations/proposition_fabrication.md
-          - "Proposition d'ordre de Transformation": commandes/commandes_mrp/validations/proposition_transformation.md
-          - "Ordres d'achats": commandes/commandes_mrp/validations/ordres_achats.md
-          - "Contrôle délais dépassés": commandes/commandes_mrp/validations/controle_delais.md
-          - "Import plan xls": commandes/commandes_mrp/validations/import_plan_xls.md
+    #   - Validations:
+    #       - "Propositions d'ordre": commandes/commandes_mrp/validations/propositions.md
+    #       - "Proposition d'ordre d'Achat": commandes/commandes_mrp/validations/proposition_achat.md
+    #       - "Proposition d'ordre de Fabrication": commandes/commandes_mrp/validations/proposition_fabrication.md
+    #       - "Proposition d'ordre de Transformation": commandes/commandes_mrp/validations/proposition_transformation.md
+    #       - "Ordres d'achats": commandes/commandes_mrp/validations/ordres_achats.md
+    #       - "Contrôle délais dépassés": commandes/commandes_mrp/validations/controle_delais.md
+    #       - "Import plan xls": commandes/commandes_mrp/validations/import_plan_xls.md
 
-      - États:
-          - "Ruptures et surstocks": commandes/commandes_mrp/Etats/Ruptures_surstocks.md
-          - "Ruptures et surstocks toutes références": commandes/commandes_mrp/Etats/Ruptures_surstocks_references.md
-          - "Commandes à annuler suite à révision des PV": commandes/commandes_mrp/Etats/Commandes_annuler_revision_PV.md
-          - "Analyse détaillée des besoins": commandes/commandes_mrp/Etats/Analyse_detaillee_besoins.md
-          - "Anomalie sur import PDP": commandes/commandes_mrp/Etats/Anomalie_import_PDP.md
-          - "Vérification paramétrage MP, SE": commandes/commandes_mrp/Etats/Verification_parametrage_MP_SE.md
-          - "Vérification paramétrage Négoce": commandes/commandes_mrp/Etats/Verification_parametrage_Negoce.md
-          - "Liste des propositions annulées": commandes/commandes_mrp/Etats/Liste_propositions_annulees.md
-          - "Commandes reçues partiellement": commandes/commandes_mrp/Etats/Commandes_recues_partiellement.md
-          - "Plan en cours": commandes/commandes_mrp/Etats/Plan_cours.md
-          - "Liste des propositions d'OF": commandes/commandes_mrp/Etats/Liste_propositions_OF.md
-          - "Traces sur traitements": commandes/commandes_mrp/Etats/Traces_traitements.md
+    #   - États:
+    #       - "Ruptures et surstocks": commandes/commandes_mrp/Etats/Ruptures_surstocks.md
+    #       - "Ruptures et surstocks toutes références": commandes/commandes_mrp/Etats/Ruptures_surstocks_references.md
+    #       - "Commandes à annuler suite à révision des PV": commandes/commandes_mrp/Etats/Commandes_annuler_revision_PV.md
+    #       - "Analyse détaillée des besoins": commandes/commandes_mrp/Etats/Analyse_detaillee_besoins.md
+    #       - "Anomalie sur import PDP": commandes/commandes_mrp/Etats/Anomalie_import_PDP.md
+    #       - "Vérification paramétrage MP, SE": commandes/commandes_mrp/Etats/Verification_parametrage_MP_SE.md
+    #       - "Vérification paramétrage Négoce": commandes/commandes_mrp/Etats/Verification_parametrage_Negoce.md
+    #       - "Liste des propositions annulées": commandes/commandes_mrp/Etats/Liste_propositions_annulees.md
+    #       - "Commandes reçues partiellement": commandes/commandes_mrp/Etats/Commandes_recues_partiellement.md
+    #       - "Plan en cours": commandes/commandes_mrp/Etats/Plan_cours.md
+    #       - "Liste des propositions d'OF": commandes/commandes_mrp/Etats/Liste_propositions_OF.md
+    #       - "Traces sur traitements": commandes/commandes_mrp/Etats/Traces_traitements.md
 
-      - Paramètres:
-          - "Configuration MRP": commandes/commandes_mrp/Parametres/Configuration_MRP.md
-          - "Jours fériés": commandes/commandes_mrp/Parametres/Jours_feries.md
-          - "Anomalies": commandes/commandes_mrp/Parametres/Anomalies.md
-          - "Plan": commandes/commandes_mrp/Parametres/Plan.md
+    #   - Paramètres:
+    #       - "Configuration MRP": commandes/commandes_mrp/Parametres/Configuration_MRP.md
+    #       - "Jours fériés": commandes/commandes_mrp/Parametres/Jours_feries.md
+    #       - "Anomalies": commandes/commandes_mrp/Parametres/Anomalies.md
+    #       - "Plan": commandes/commandes_mrp/Parametres/Plan.md
 
-      - "Edition Réception": commandes/edition_reception.md
-      - "Solde des Commandes": commandes/solde.md
-      - "Paramétrage Commandes": commandes/parametrage.md
+    #   - "Edition Réception": commandes/edition_reception.md
+    #   - "Solde des Commandes": commandes/solde.md
+    #   - "Paramétrage Commandes": commandes/parametrage.md
+  - "Planning":
+      - "Création OF CMD": Planning/creation_of_cmd.md
+      - "Simulation OF": Planning/simulation_of.md
+      - "Fabrication OF": Planning/fabrication_of.md
+      #- "Solde OF": planning/solde_of.md
+      - "Consultation Planning": Planning/consultation_planning.md
+      - "Tableau de Bord": Planning/tableau_de_board.md
+    #   - "Création OF Prévisionnel": planning/creation_of_previsionnel.md
+    #   - "Modification OF Prévisionnel": planning/modif_of_previsionnel.md
+    #   - "Simulation OF Prévisionnel": planning/simulation_of_previsionnel.md
+
+    #   - Maintenance:
+    #       - "Déverrouiller un Groupe": planning/maintenance/deverrouiller_un_groupe.md
+    #       - "Réparation Planning": planning/maintenance/reparation_planning.md
+    #       - "Changement de Destination": planning/maintenance/changement_de_destination.md
+    #       - "Changement Atelier Coupe": planning/maintenance/changement_atelier_coupe.md
+    #       - "Changement Atelier Dentelle": planning/maintenance/changement_atelier_dentelle.md
+    #       - "Régénération Liste à Servir": planning/maintenance/regeneration_liste_a_servir.md
+    #       - "Changement Atelier": planning/maintenance/changement_atelier.md
+    #       - "Droit SVP": planning/maintenance/droit_svp.md
+    #       - "Synchronisation Tiers 0001 → 0015": planning/maintenance/synchronisation_tiers_0001_0015.md
+
+    #   - Edition Planning:
+    #       - "OFs à Lancer": planning/edition_planning/ofs_a_lancer.md
+    #       - "OFs à Stocker": planning/edition_planning/ofs_a_stocker.md
+    #       - "Planning Prévisionnel - Étapes": planning/edition_planning/planning_previsionnel_etapes.md
+    #       - "Retard au Lancement": planning/edition_planning/retard_au_lancement.md
+    #       - "Retard de Coupe": planning/edition_planning/retard_de_coupe.md
+    #       - "Retard Date Confirmée": planning/edition_planning/retard_date_confirmee.md
+    #       - "Retard Date Souhaitée": planning/edition_planning/retard_date_souhaitee.md
+    #       - "Date Limite Lancement sans Rupture": planning/edition_planning/date_limite_lancement_sans_rupture.md
+    #       - "Suivi des En-cours": planning/edition_planning/suivi_des_en_cours.md
+    #       - "Anomalies": planning/edition_planning/anomalies.md
+    #       - "Anomalies sur Flux Global": planning/edition_planning/anomalies_sur_flux_global.md
+    #       - "Manquants OFs Validés": planning/edition_planning/manquants_ofs_valides.md
+    #       - "Historique Modifications OFs": planning/edition_planning/historique_modifications_ofs.md
+    #       - "Édition Tableau de Bord": planning/edition_planning/edition_tableau_de_board.md
+    #       - "Flux de Production": planning/edition_planning/flux_de_production.md
+    #       - "Flux de Chaîne": planning/edition_planning/flux_de_chaine.md
+    #       - "Flux Atelier": planning/edition_planning/flux_atelier.md
+
+    #   - Suivi:
+    #       - "Suivi en Cours": planning/suivi/suivi_en_cours.md
+    #       - "Production Terminée": planning/suivi/production_terminee.md
+
+    #   - Edition Suivi:
+    #       - "Edition OFs Créés": planning/edition_suivi/edition_ofs_crees.md
+    #       - "Edition Étape": planning/edition_suivi/edition_etape.md
+    #       - "Entrée/Sortie Chaîne Montage": planning/edition_suivi/edition_entree_sortie_chaine_montage.md
+    #       - "Suivi SVP": planning/edition_suivi/suivi_svp.md
+    #       - "Suivi Négoce": planning/edition_suivi/suivi_negoce.md
+    #       - "Synthèse Valorisé": planning/edition_suivi/synthese_valorisee.md
+    #       - "Historique des OFs Soldes": planning/edition_suivi/Historique_Soldes.md
+    #       - "Statistiques de Production ": planning/edition_suivi/Statistiques_Production.md
+    #       - "Edition Récapitulatif Entrée en Stock": planning/edition_suivi/Edition_Récapitulatif_Entrée_Stock.md
 
   - Facturation:
       - "Anomalie Traitement": facturation/anomalie_traitement.md
