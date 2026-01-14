@@ -98,6 +98,15 @@ nav:
     #   - "Edition Réception": commandes/edition_reception.md
     #   - "Solde des Commandes": commandes/solde.md
     #   - "Paramétrage Commandes": commandes/parametrage.md
+  - "Stock":
+      - "Sortie matiere": Stock/Sortie_matière.md
+      - "Consultation Stock":  Stock/consultation_stocks.md
+      - "Entrée Stock": Stock/reception.md
+    #   - "Approvisionnement": Stock/approvisionnement.md
+    #    - "Réservation de Stock": Stock/reservation_de_stock.md
+    #    - "Transfert de Stock": Stock/transfert_de_stock.md
+    #    - "État des Stocks": Stock/etat_des_stocks.md
+    #    - "Paramétrage Stock": Stock/parametrage_stock.md
   - "Planning":
       - "Création OF CMD": Planning/creation_of_cmd.md
       - "Simulation OF": Planning/simulation_of.md
@@ -153,6 +162,126 @@ nav:
     #       - "Historique des OFs Soldes": planning/edition_suivi/Historique_Soldes.md
     #       - "Statistiques de Production ": planning/edition_suivi/Statistiques_Production.md
     #       - "Edition Récapitulatif Entrée en Stock": planning/edition_suivi/Edition_Récapitulatif_Entrée_Stock.md
+  - Coupe:
+    #   - Etude Coupe:
+    #       - "Lancement": coupe/etude/lancement.md
+    #       - Décomposition du L:
+    #           - "Paramétrage Modèle": coupe/etude/decomposition/parametrage_modele.md
+    #           - "Décomposition": coupe/etude/decomposition/decomposition.md
+    #           - "Définition Du L": coupe/etude/decomposition/definition_du_l.md
+    #           - "Édition": coupe/etude/decomposition/edition.md
+    #       - Génération Matelas:
+    #           - "Création": coupe/etude/generation_matelas/creation.md
+    #           - "Feuilles Matelassages": coupe/etude/generation_matelas/feuilles_matelassages.md
+    #           - "Matelas et Besoins Matières": coupe/etude/generation_matelas/matelas_besoins_matieres.md
+    #       - Transfert:
+    #           - "Placement": coupe/etude/transfert/placement.md
+    #           - "Sortie Matière": coupe/etude/transfert/sortie_matiere.md
+    #           - "Planification": coupe/etude/transfert/planification.md
+
+      - Suivi Coupe:
+        #   - Suivi Matelassage:
+        #       - "Suivi": coupe/suivi/matelassage/suivi.md
+        #   - Récapitulatif:
+        #       - "Édition": coupe/suivi/matelassage/recap/edition.md
+        #       - "Réédition": coupe/suivi/matelassage/recap/reedition.md
+        #       - "Consultation": coupe/suivi/matelassage/recap/consultation.md
+        #   - Fiche Paquet:
+        #       - "Fiche Paquet": coupe/fiche_paquet/fiche_paquet.md
+          - Expéditions:
+              - "Bon Livraison": coupe/expeditions/bon_livraison.md
+            #   - "Sérigraphie Envoi/Réception": coupe/expeditions/serigraphie_envoi_reception.md
+              - "Colisage": coupe/expeditions/colisage.md
+            #   - "Édition Récap Colis pour un Atelier": coupe/expeditions/edition_recap_colis.md
+            #   - "Validation Départ": coupe/expeditions/validation_depart.md
+            #   - "Suivi Expéditions": coupe/expeditions/suivi_expeditions.md
+            #   - "Création/Modification Carton": coupe/expeditions/creation_modification_carton.md
+            #   - "Expédition Pièces à Montrer": coupe/expeditions/expedition_pieces_montrer.md
+
+    #   - Paramétrage:
+    #       - Paramétrage Étude de Coupe:
+    #           - Matelassage:
+    #               - "Matelassage": coupe/parametrage/etude/matelassage.md
+    #           - Coupe:
+    #               - "Coupe": coupe/parametrage/etude/coupe.md
+    #           - Placement:
+    #               - "Temps Préparation": coupe/parametrage/etude/placement/tps_preparation.md
+    #               - "Algorithme Placement Automatique": coupe/parametrage/etude/placement/algorithme_auto.md
+    #               - "Modification Modèle CAO": coupe/parametrage/etude/placement/modif_modele_cao.md
+    #               - "Chemins Lectra": coupe/parametrage/etude/placement/chemins_lectra.md
+    #           - Planification:
+    #               - "Définition Lettre": coupe/parametrage/etude/planification/definition_lettre.md
+    #           - Type de colisage:
+    #               - "Type de colisage": coupe/parametrage/etude/type_colisage.md
+    #           - Matières / Matelas:
+    #               - "Matières / Matelas": coupe/parametrage/etude/matieres_matelas.md
+    #       - Suivi à la Coupe:
+    #           - "Lettre Colis Marque": coupe/parametrage/suivi/lettre_colis_marque.md
+
+    #   - Sous de Coupe:
+    #       - "Historique Action": coupe/cut_partner/historique_action.md
+    #       - Matelas:
+    #           - "Lister / Planifier": coupe/cut_partner/matelas/lister_planifier.md
+    #           - "Changer Atelier": coupe/cut_partner/matelas/changer_atelier.md
+    #       - Paramétrage:
+    #           - Matelasseurs: coupe/cut_partner/parametrage/matelasseurs.md
+    #           - Jours Fériés: coupe/cut_partner/parametrage/jours_feries.md
+    #           - Coupes: coupe/cut_partner/parametrage/coupes.md
+    #       - Ressources:
+    #           - Atelier:
+    #               - "Supprimer Atelier": coupe/cut_partner/ressources/atelier/supprimer_atelier.md
+    #               - "Configurer Atelier": coupe/cut_partner/ressources/atelier/configurer_atelier.md
+    #               - "Configuration Codes Couleur": coupe/cut_partner/ressources/atelier/configuration_codes_couleur.md
+    #           - Profil Horaire: coupe/cut_partner/ressources/profil_horaire.md
+    #           - Configuration Tiers: coupe/cut_partner/ressources/configuration_tiers.md
+    #           - Profil Semaine: coupe/cut_partner/ressources/profil_semaine.md
+    #       - Maintenance: coupe/cut_partner/maintenance.md
+
+    #   - Presse:
+    #       - "Suivi En Cours Dentelle": coupe/presse/suivi_en_cours_dentelle.md
+    #       - Edition: coupe/presse/edition.md
+    #       - "Impression Ticket Production Dentelle":
+    #           - "Impression": coupe/presse/impression_ticket_production_dentelle/impression.md
+    #           - "Réimpression": coupe/presse/impression_ticket_production_dentelle/reimpression.md
+    #           - "Liste des Tickets Non Générés": coupe/presse/impression_ticket_production_dentelle/liste_tickets_non_generes.md
+    #           - "Impression des Paquets": coupe/presse/impression_ticket_production_dentelle/impression_paquets.md
+    #       - Paramétrage:
+    #           - Morceaux: coupe/presse/parametrage/morceaux.md
+    #           - Imprimante Zebra: coupe/presse/parametrage/imprimante_zebra.md
+    #           - Modèles: coupe/presse/parametrage/modeles.md
+    #           - Impression Tickets Prod Dentelle: coupe/presse/parametrage/impression_tickets_prod_dentelle.md
+
+    #   - Moulage:
+    #       - Edition: coupe/moulage/edition.md
+    #       - "Impression des Tickets": coupe/moulage/impression_des_tickets.md
+    #       - "Réimpression des Tickets": coupe/moulage/reimpression_des_tickets.md
+    #       - "Impression des Fiches Paquet": coupe/moulage/impression_fiches_paquet.md
+    #       - Paramétrage:
+    #           - Bonnet Moule: coupe/moulage/parametrage/bonnet_moule.md
+
+    #   - Maintenance:
+    #       - Maintenance Etude Coupe:
+    #           - Changement RAR: coupe/maintenance/etude_coupe/changement_rar.md
+    #           - Annuler un Matelas: coupe/maintenance/etude_coupe/annuler_un_matelas.md
+    #           - Changement Lg Max Matelas: coupe/maintenance/etude_coupe/changement_lg_max_matelas.md
+    #           - Effacer Paramétrage du L: coupe/maintenance/etude_coupe/effacer_parametrage_du_l.md
+    #           - Changement Laize Matelas: coupe/maintenance/etude_coupe/changement_laize_matelas.md
+    #           - Solder un L de Coupe Extérieure: coupe/maintenance/etude_coupe/solder_un_l_de_coupe_exterieure.md
+    #           - Création Nouveau Trace: coupe/maintenance/etude_coupe/creation_nouveau_trace.md
+    #           - Réimpression Feuilles de Matelassage: coupe/maintenance/etude_coupe/reimpression_feuilles_de_matelassage.md
+    #           - Créer une Référence de Substitution: coupe/maintenance/etude_coupe/creer_une_reference_de_substitution.md
+    #           - Mettre un L à l'État LANCE: coupe/maintenance/etude_coupe/mettre_un_l_a_etat_lance.md
+    #       - Maintenance Suivi Matelassage:
+    #           - Annulation d'un Matelas: coupe/maintenance/suivi_matelassage/annulation_un_matelas.md
+    #           - Modification du Nombre de Plis Réalisés: coupe/maintenance/suivi_matelassage/modification_nombre_plis_realises.md
+    #           - Régénérer Synthèse Récap: coupe/maintenance/suivi_matelassage/regenere_synthese_recap.md
+    #       - Maintenance Suivi Coupe:
+    #           - Retour de Coupe: coupe/maintenance/suivi_coupe/retour_de_coupe.md
+    #           - Annuler Facture Proforma: coupe/maintenance/suivi_coupe/annuler_facture_proforma.md
+    #           - Fiches Paquets: coupe/maintenance/suivi_coupe/fiches_paquets.md
+    #           - Annuler un OF d'un BL: coupe/maintenance/suivi_coupe/annuler_of_bl.md
+    #           - Suppression d'un BL: coupe/maintenance/suivi_coupe/suppression_bl.md
+    #           - Suppression Carton sans Ligne: coupe/maintenance/suivi_coupe/suppression_carton_sans
 
   - Facturation:
       - "Anomalie Traitement": facturation/anomalie_traitement.md
@@ -219,179 +348,59 @@ nav:
   - Stock:
       - "Exemple": stock/example.md # placeholder
 
-  - Planning:
-      - "Création OF CMD": planning/creation_of_cmd.md
-      - "Simulation OF": planning/simulation_of.md
-      - "Fabrication OF": planning/fabrication_of.md
-      - "Solde OF": planning/solde_of.md
-      - "Consultation Planning": planning/consultation_planning.md
-      - "Tableau de Bord": planning/tableau_de_board.md
-      - "Création OF Prévisionnel": planning/creation_of_previsionnel.md
-      - "Modification OF Prévisionnel": planning/modif_of_previsionnel.md
-      - "Simulation OF Prévisionnel": planning/simulation_of_previsionnel.md
+#   - Planning:
+#       - "Création OF CMD": planning/creation_of_cmd.md
+#       - "Simulation OF": planning/simulation_of.md
+#       - "Fabrication OF": planning/fabrication_of.md
+#       - "Solde OF": planning/solde_of.md
+#       - "Consultation Planning": planning/consultation_planning.md
+#       - "Tableau de Bord": planning/tableau_de_board.md
+#       - "Création OF Prévisionnel": planning/creation_of_previsionnel.md
+#       - "Modification OF Prévisionnel": planning/modif_of_previsionnel.md
+#       - "Simulation OF Prévisionnel": planning/simulation_of_previsionnel.md
 
-      - Maintenance:
-          - "Déverrouiller un Groupe": planning/maintenance/deverrouiller_un_groupe.md
-          - "Réparation Planning": planning/maintenance/reparation_planning.md
-          - "Changement de Destination": planning/maintenance/changement_de_destination.md
-          - "Changement Atelier Coupe": planning/maintenance/changement_atelier_coupe.md
-          - "Changement Atelier Dentelle": planning/maintenance/changement_atelier_dentelle.md
-          - "Régénération Liste à Servir": planning/maintenance/regeneration_liste_a_servir.md
-          - "Changement Atelier": planning/maintenance/changement_atelier.md
-          - "Droit SVP": planning/maintenance/droit_svp.md
-          - "Synchronisation Tiers 0001 → 0015": planning/maintenance/synchronisation_tiers_0001_0015.md
+#       - Maintenance:
+#           - "Déverrouiller un Groupe": planning/maintenance/deverrouiller_un_groupe.md
+#           - "Réparation Planning": planning/maintenance/reparation_planning.md
+#           - "Changement de Destination": planning/maintenance/changement_de_destination.md
+#           - "Changement Atelier Coupe": planning/maintenance/changement_atelier_coupe.md
+#           - "Changement Atelier Dentelle": planning/maintenance/changement_atelier_dentelle.md
+#           - "Régénération Liste à Servir": planning/maintenance/regeneration_liste_a_servir.md
+#           - "Changement Atelier": planning/maintenance/changement_atelier.md
+#           - "Droit SVP": planning/maintenance/droit_svp.md
+#           - "Synchronisation Tiers 0001 → 0015": planning/maintenance/synchronisation_tiers_0001_0015.md
 
-      - Edition Planning:
-          - "OFs à Lancer": planning/edition_planning/ofs_a_lancer.md
-          - "OFs à Stocker": planning/edition_planning/ofs_a_stocker.md
-          - "Planning Prévisionnel - Étapes": planning/edition_planning/planning_previsionnel_etapes.md
-          - "Retard au Lancement": planning/edition_planning/retard_au_lancement.md
-          - "Retard de Coupe": planning/edition_planning/retard_de_coupe.md
-          - "Retard Date Confirmée": planning/edition_planning/retard_date_confirmee.md
-          - "Retard Date Souhaitée": planning/edition_planning/retard_date_souhaitee.md
-          - "Date Limite Lancement sans Rupture": planning/edition_planning/date_limite_lancement_sans_rupture.md
-          - "Suivi des En-cours": planning/edition_planning/suivi_des_en_cours.md
-          - "Anomalies": planning/edition_planning/anomalies.md
-          - "Anomalies sur Flux Global": planning/edition_planning/anomalies_sur_flux_global.md
-          - "Manquants OFs Validés": planning/edition_planning/manquants_ofs_valides.md
-          - "Historique Modifications OFs": planning/edition_planning/historique_modifications_ofs.md
-          - "Édition Tableau de Bord": planning/edition_planning/edition_tableau_de_board.md
-          - "Flux de Production": planning/edition_planning/flux_de_production.md
-          - "Flux de Chaîne": planning/edition_planning/flux_de_chaine.md
-          - "Flux Atelier": planning/edition_planning/flux_atelier.md
+#       - Edition Planning:
+#           - "OFs à Lancer": planning/edition_planning/ofs_a_lancer.md
+#           - "OFs à Stocker": planning/edition_planning/ofs_a_stocker.md
+#           - "Planning Prévisionnel - Étapes": planning/edition_planning/planning_previsionnel_etapes.md
+#           - "Retard au Lancement": planning/edition_planning/retard_au_lancement.md
+#           - "Retard de Coupe": planning/edition_planning/retard_de_coupe.md
+#           - "Retard Date Confirmée": planning/edition_planning/retard_date_confirmee.md
+#           - "Retard Date Souhaitée": planning/edition_planning/retard_date_souhaitee.md
+#           - "Date Limite Lancement sans Rupture": planning/edition_planning/date_limite_lancement_sans_rupture.md
+#           - "Suivi des En-cours": planning/edition_planning/suivi_des_en_cours.md
+#           - "Anomalies": planning/edition_planning/anomalies.md
+#           - "Anomalies sur Flux Global": planning/edition_planning/anomalies_sur_flux_global.md
+#           - "Manquants OFs Validés": planning/edition_planning/manquants_ofs_valides.md
+#           - "Historique Modifications OFs": planning/edition_planning/historique_modifications_ofs.md
+#           - "Édition Tableau de Bord": planning/edition_planning/edition_tableau_de_board.md
+#           - "Flux de Production": planning/edition_planning/flux_de_production.md
+#           - "Flux de Chaîne": planning/edition_planning/flux_de_chaine.md
+#           - "Flux Atelier": planning/edition_planning/flux_atelier.md
 
-      - Suivi:
-          - "Suivi en Cours": planning/suivi/suivi_en_cours.md
-          - "Production Terminée": planning/suivi/production_terminee.md
+#       - Suivi:
+#           - "Suivi en Cours": planning/suivi/suivi_en_cours.md
+#           - "Production Terminée": planning/suivi/production_terminee.md
 
-      - Edition Suivi:
-          - "Edition OFs Créés": planning/edition_suivi/edition_ofs_crees.md
-          - "Edition Étape": planning/edition_suivi/edition_etape.md
-          - "Entrée/Sortie Chaîne Montage": planning/edition_suivi/edition_entree_sortie_chaine_montage.md
-          - "Suivi SVP": planning/edition_suivi/suivi_svp.md
-          - "Suivi Négoce": planning/edition_suivi/suivi_negoce.md
-          - "Synthèse Valorisé": planning/edition_suivi/synthese_valorisee.md
-          - "Historique des OFs Soldes": planning/edition_suivi/Historique_Soldes.md
-          - "Statistiques de Production ": planning/edition_suivi/Statistiques_Production.md
-          - "Edition Récapitulatif Entrée en Stock": planning/edition_suivi/Edition_Récapitulatif_Entrée_Stock.md
+#       - Edition Suivi:
+#           - "Edition OFs Créés": planning/edition_suivi/edition_ofs_crees.md
+#           - "Edition Étape": planning/edition_suivi/edition_etape.md
+#           - "Entrée/Sortie Chaîne Montage": planning/edition_suivi/edition_entree_sortie_chaine_montage.md
+#           - "Suivi SVP": planning/edition_suivi/suivi_svp.md
+#           - "Suivi Négoce": planning/edition_suivi/suivi_negoce.md
+#           - "Synthèse Valorisé": planning/edition_suivi/synthese_valorisee.md
+#           - "Historique des OFs Soldes": planning/edition_suivi/Historique_Soldes.md
+#           - "Statistiques de Production ": planning/edition_suivi/Statistiques_Production.md
+#           - "Edition Récapitulatif Entrée en Stock": planning/edition_suivi/Edition_Récapitulatif_Entrée_Stock.md
 
-  - Coupe:
-      - Etude Coupe:
-          - "Lancement": coupe/etude/lancement.md
-          - Décomposition du L:
-              - "Paramétrage Modèle": coupe/etude/decomposition/parametrage_modele.md
-              - "Décomposition": coupe/etude/decomposition/decomposition.md
-              - "Définition Du L": coupe/etude/decomposition/definition_du_l.md
-              - "Édition": coupe/etude/decomposition/edition.md
-          - Génération Matelas:
-              - "Création": coupe/etude/generation_matelas/creation.md
-              - "Feuilles Matelassages": coupe/etude/generation_matelas/feuilles_matelassages.md
-              - "Matelas et Besoins Matières": coupe/etude/generation_matelas/matelas_besoins_matieres.md
-          - Transfert:
-              - "Placement": coupe/etude/transfert/placement.md
-              - "Sortie Matière": coupe/etude/transfert/sortie_matiere.md
-              - "Planification": coupe/etude/transfert/planification.md
-
-      - Suivi Coupe:
-          - Suivi Matelassage:
-              - "Suivi": coupe/suivi/matelassage/suivi.md
-          - Récapitulatif:
-              - "Édition": coupe/suivi/matelassage/recap/edition.md
-              - "Réédition": coupe/suivi/matelassage/recap/reedition.md
-              - "Consultation": coupe/suivi/matelassage/recap/consultation.md
-          - Fiche Paquet:
-              - "Fiche Paquet": coupe/fiche_paquet/fiche_paquet.md
-          - Expéditions:
-              - "Bon Livraison": coupe/expeditions/bon_livraison.md
-              - "Sérigraphie Envoi/Réception": coupe/expeditions/serigraphie_envoi_reception.md
-              - "Colisage": coupe/expeditions/colisage.md
-              - "Édition Récap Colis pour un Atelier": coupe/expeditions/edition_recap_colis.md
-              - "Validation Départ": coupe/expeditions/validation_depart.md
-              - "Suivi Expéditions": coupe/expeditions/suivi_expeditions.md
-              - "Création/Modification Carton": coupe/expeditions/creation_modification_carton.md
-              - "Expédition Pièces à Montrer": coupe/expeditions/expedition_pieces_montrer.md
-
-      - Paramétrage:
-          - Paramétrage Étude de Coupe:
-              - Matelassage:
-                  - "Matelassage": coupe/parametrage/etude/matelassage.md
-              - Coupe:
-                  - "Coupe": coupe/parametrage/etude/coupe.md
-              - Placement:
-                  - "Temps Préparation": coupe/parametrage/etude/placement/tps_preparation.md
-                  - "Algorithme Placement Automatique": coupe/parametrage/etude/placement/algorithme_auto.md
-                  - "Modification Modèle CAO": coupe/parametrage/etude/placement/modif_modele_cao.md
-                  - "Chemins Lectra": coupe/parametrage/etude/placement/chemins_lectra.md
-              - Planification:
-                  - "Définition Lettre": coupe/parametrage/etude/planification/definition_lettre.md
-              - Type de colisage:
-                  - "Type de colisage": coupe/parametrage/etude/type_colisage.md
-              - Matières / Matelas:
-                  - "Matières / Matelas": coupe/parametrage/etude/matieres_matelas.md
-          - Suivi à la Coupe:
-              - "Lettre Colis Marque": coupe/parametrage/suivi/lettre_colis_marque.md
-
-      - Sous de Coupe:
-          - "Historique Action": coupe/cut_partner/historique_action.md
-          - Matelas:
-              - "Lister / Planifier": coupe/cut_partner/matelas/lister_planifier.md
-              - "Changer Atelier": coupe/cut_partner/matelas/changer_atelier.md
-          - Paramétrage:
-              - Matelasseurs: coupe/cut_partner/parametrage/matelasseurs.md
-              - Jours Fériés: coupe/cut_partner/parametrage/jours_feries.md
-              - Coupes: coupe/cut_partner/parametrage/coupes.md
-          - Ressources:
-              - Atelier:
-                  - "Supprimer Atelier": coupe/cut_partner/ressources/atelier/supprimer_atelier.md
-                  - "Configurer Atelier": coupe/cut_partner/ressources/atelier/configurer_atelier.md
-                  - "Configuration Codes Couleur": coupe/cut_partner/ressources/atelier/configuration_codes_couleur.md
-              - Profil Horaire: coupe/cut_partner/ressources/profil_horaire.md
-              - Configuration Tiers: coupe/cut_partner/ressources/configuration_tiers.md
-              - Profil Semaine: coupe/cut_partner/ressources/profil_semaine.md
-          - Maintenance: coupe/cut_partner/maintenance.md
-
-      - Presse:
-          - "Suivi En Cours Dentelle": coupe/presse/suivi_en_cours_dentelle.md
-          - Edition: coupe/presse/edition.md
-          - "Impression Ticket Production Dentelle":
-              - "Impression": coupe/presse/impression_ticket_production_dentelle/impression.md
-              - "Réimpression": coupe/presse/impression_ticket_production_dentelle/reimpression.md
-              - "Liste des Tickets Non Générés": coupe/presse/impression_ticket_production_dentelle/liste_tickets_non_generes.md
-              - "Impression des Paquets": coupe/presse/impression_ticket_production_dentelle/impression_paquets.md
-          - Paramétrage:
-              - Morceaux: coupe/presse/parametrage/morceaux.md
-              - Imprimante Zebra: coupe/presse/parametrage/imprimante_zebra.md
-              - Modèles: coupe/presse/parametrage/modeles.md
-              - Impression Tickets Prod Dentelle: coupe/presse/parametrage/impression_tickets_prod_dentelle.md
-
-      - Moulage:
-          - Edition: coupe/moulage/edition.md
-          - "Impression des Tickets": coupe/moulage/impression_des_tickets.md
-          - "Réimpression des Tickets": coupe/moulage/reimpression_des_tickets.md
-          - "Impression des Fiches Paquet": coupe/moulage/impression_fiches_paquet.md
-          - Paramétrage:
-              - Bonnet Moule: coupe/moulage/parametrage/bonnet_moule.md
-
-      - Maintenance:
-          - Maintenance Etude Coupe:
-              - Changement RAR: coupe/maintenance/etude_coupe/changement_rar.md
-              - Annuler un Matelas: coupe/maintenance/etude_coupe/annuler_un_matelas.md
-              - Changement Lg Max Matelas: coupe/maintenance/etude_coupe/changement_lg_max_matelas.md
-              - Effacer Paramétrage du L: coupe/maintenance/etude_coupe/effacer_parametrage_du_l.md
-              - Changement Laize Matelas: coupe/maintenance/etude_coupe/changement_laize_matelas.md
-              - Solder un L de Coupe Extérieure: coupe/maintenance/etude_coupe/solder_un_l_de_coupe_exterieure.md
-              - Création Nouveau Trace: coupe/maintenance/etude_coupe/creation_nouveau_trace.md
-              - Réimpression Feuilles de Matelassage: coupe/maintenance/etude_coupe/reimpression_feuilles_de_matelassage.md
-              - Créer une Référence de Substitution: coupe/maintenance/etude_coupe/creer_une_reference_de_substitution.md
-              - Mettre un L à l'État LANCE: coupe/maintenance/etude_coupe/mettre_un_l_a_etat_lance.md
-          - Maintenance Suivi Matelassage:
-              - Annulation d'un Matelas: coupe/maintenance/suivi_matelassage/annulation_un_matelas.md
-              - Modification du Nombre de Plis Réalisés: coupe/maintenance/suivi_matelassage/modification_nombre_plis_realises.md
-              - Régénérer Synthèse Récap: coupe/maintenance/suivi_matelassage/regenere_synthese_recap.md
-          - Maintenance Suivi Coupe:
-              - Retour de Coupe: coupe/maintenance/suivi_coupe/retour_de_coupe.md
-              - Annuler Facture Proforma: coupe/maintenance/suivi_coupe/annuler_facture_proforma.md
-              - Fiches Paquets: coupe/maintenance/suivi_coupe/fiches_paquets.md
-              - Annuler un OF d'un BL: coupe/maintenance/suivi_coupe/annuler_of_bl.md
-              - Suppression d'un BL: coupe/maintenance/suivi_coupe/suppression_bl.md
-              - Suppression Carton sans Ligne: coupe/maintenance/suivi_coupe/suppression_carton_sans
