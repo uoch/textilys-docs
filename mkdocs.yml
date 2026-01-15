@@ -282,71 +282,83 @@ nav:
     #           - Annuler un OF d'un BL: coupe/maintenance/suivi_coupe/annuler_of_bl.md
     #           - Suppression d'un BL: coupe/maintenance/suivi_coupe/suppression_bl.md
     #           - Suppression Carton sans Ligne: coupe/maintenance/suivi_coupe/suppression_carton_sans
+  - Production:
+      - "Suivi production": 
+          - "impression ticket production": production/suivi/impression_ticket_production.md
+
+      - "Activité atelier": 
+          - "Fichier": 
+              - "fiche jour": production/activite_atelier/fichier/suivi_production_journee.md
+              - "Ticket":
+                  - "Scan par Douchette": production/activite_atelier/fichier/ticket/scan_par_douchette.md
+  - Conditionnement:
+      - Qualité:
+          - "Contrôle Qualité": conditionnement/qualite/controle_qualite.md
+      - Assurence Qualité:
+          - "Saisie des resultats": conditionnement/assurance_qualite/saisie_resultats.md
+      - Consultation Stock:
+          - "Stock" : conditionnement/consultation_stock/stock.md
 
   - Facturation:
-      - "Anomalie Traitement": facturation/anomalie_traitement.md
-      - Avoir: facturation/avoir.md
-      - "Lignes à Facturer": facturation/lignes_a_facturer.md
-      - "Suivi Facture": facturation/suivi_facture.md
-      - "Commande Service à Facturer": facturation/commande_service.md
-      - "Solde OF": facturation/solde_of.md
-      - Factures: facturation/factures.md
+      Facture:
+        - "Factures": facturation/facture/factures.md
+        - "Suivi Facture": facturation/facture/suivi_facturation.md
 
-      - "Prix de cession":
-          - "Prix de Cession Coupe au large": facturation/prix_cession/coupe_large.md
-          - "Prix de Cession Coupe au Dentelle": facturation/prix_cession/coupe_dentelle.md
-          - "Prix de Cession Co-Traitement": facturation/prix_cession/co_traitement.md
-          - "Récapitulatif Prix de cession": facturation/prix_cession/recapitulatif.md
-          - "Prix de Cession Conditionnement": facturation/prix_cession/conditionnement.md
-          - "Prix façon par Atelier (Gamme)": facturation/prix_cession/facon_atelier.md
+  #     - "Prix de cession":
+  #         - "Prix de Cession Coupe au large": facturation/prix_cession/coupe_large.md
+  #         - "Prix de Cession Coupe au Dentelle": facturation/prix_cession/coupe_dentelle.md
+  #         - "Prix de Cession Co-Traitement": facturation/prix_cession/co_traitement.md
+  #         - "Récapitulatif Prix de cession": facturation/prix_cession/recapitulatif.md
+  #         - "Prix de Cession Conditionnement": facturation/prix_cession/conditionnement.md
+  #         - "Prix façon par Atelier (Gamme)": facturation/prix_cession/facon_atelier.md
 
-      - Maintenance:
-          - "Maintenance Facture": facturation/maintenance/maintenance_facture.md
-          - "Modification Numéro Facture": facturation/maintenance/modification_numero.md
-          - "Annulation d'un BL": facturation/maintenance/annulation_bl.md
-          - "Défaut Quantité Facture": facturation/maintenance/defaut_quantite_facture.md
-          - "Annulation d'un Barquette": facturation/maintenance/annulation_barquette.md
-          - "Défaut Quantité Lignes à Facturer": facturation/maintenance/defaut_quantite_lignes.md
-          - "Suppression d'une ligne de Facture": facturation/maintenance/suppression_ligne.md
-          - "Transfert du Factures": facturation/maintenance/transfert_factures.md
-          - "Modification Prix d'une Ligne de Facture": facturation/maintenance/modification_prix_ligne.md
-          - "Transfert et Fusion de Facture": facturation/maintenance/transfert_fusion.md
-          - "Modification Date Facture": facturation/maintenance/modification_date.md
-          - "Dévalider une Facture": facturation/maintenance/devalider_facture.md
+  #     - Maintenance:
+  #         - "Maintenance Facture": facturation/maintenance/maintenance_facture.md
+  #         - "Modification Numéro Facture": facturation/maintenance/modification_numero.md
+  #         - "Annulation d'un BL": facturation/maintenance/annulation_bl.md
+  #         - "Défaut Quantité Facture": facturation/maintenance/defaut_quantite_facture.md
+  #         - "Annulation d'un Barquette": facturation/maintenance/annulation_barquette.md
+  #         - "Défaut Quantité Lignes à Facturer": facturation/maintenance/defaut_quantite_lignes.md
+  #         - "Suppression d'une ligne de Facture": facturation/maintenance/suppression_ligne.md
+  #         - "Transfert du Factures": facturation/maintenance/transfert_factures.md
+  #         - "Modification Prix d'une Ligne de Facture": facturation/maintenance/modification_prix_ligne.md
+  #         - "Transfert et Fusion de Facture": facturation/maintenance/transfert_fusion.md
+  #         - "Modification Date Facture": facturation/maintenance/modification_date.md
+  #         - "Dévalider une Facture": facturation/maintenance/devalider_facture.md
 
-      - Etat:
-          - "Liste des BLs": facturation/etat/liste_bls.md
-          - "Quantités Facturées par Modèle": facturation/etat/quantites_par_modele.md
-          - "Quantités Facturées par Prix": facturation/etat/quantites_par_prix.md
+  #     - Etat:
+  #         - "Liste des BLs": facturation/etat/liste_bls.md
+  #         - "Quantités Facturées par Modèle": facturation/etat/quantites_par_modele.md
+  #         - "Quantités Facturées par Prix": facturation/etat/quantites_par_prix.md
 
-      - Paramétrage:
-          - Système:
-              - "Paramétrage Société": facturation/parametrage/systeme/param_societe.md
-              - Service: facturation/parametrage/systeme/service.md
-              - "Coût Société": facturation/parametrage/systeme/cout_societe.md
-              - Atelier: facturation/parametrage/systeme/atelier.md
+  #     - Paramétrage:
+  #         - Système:
+  #             - "Paramétrage Société": facturation/parametrage/systeme/param_societe.md
+  #             - Service: facturation/parametrage/systeme/service.md
+  #             - "Coût Société": facturation/parametrage/systeme/cout_societe.md
+  #             - Atelier: facturation/parametrage/systeme/atelier.md
 
-          - "Gestion Client":
-              - "Type de règlement": facturation/parametrage/gestion_client/type_reglement.md
-              - Vendeur: facturation/parametrage/gestion_client/vendeur.md
-              - Échéance: facturation/parametrage/gestion_client/echeance.md
-              - Pays: facturation/parametrage/gestion_client/pays.md
-              - Devise: facturation/parametrage/gestion_client/devise.md
-              - "Statut assurance": facturation/parametrage/gestion_client/statut_assurance.md
-              - "Type de Facturation": facturation/parametrage/gestion_client/type_facturation.md
-              - "Zone géographique": facturation/parametrage/gestion_client/zone_geographique.md
-              - "Type d'activité": facturation/parametrage/gestion_client/type_activite.md
-              - "Qualification client": facturation/parametrage/gestion_client/qualification_client.md
-              - Représentant: facturation/parametrage/gestion_client/representant.md
-              - "Type d'adresse": facturation/parametrage/gestion_client/type_adresse.md
+  #         - "Gestion Client":
+  #             - "Type de règlement": facturation/parametrage/gestion_client/type_reglement.md
+  #             - Vendeur: facturation/parametrage/gestion_client/vendeur.md
+  #             - Échéance: facturation/parametrage/gestion_client/echeance.md
+  #             - Pays: facturation/parametrage/gestion_client/pays.md
+  #             - Devise: facturation/parametrage/gestion_client/devise.md
+  #             - "Statut assurance": facturation/parametrage/gestion_client/statut_assurance.md
+  #             - "Type de Facturation": facturation/parametrage/gestion_client/type_facturation.md
+  #             - "Zone géographique": facturation/parametrage/gestion_client/zone_geographique.md
+  #             - "Type d'activité": facturation/parametrage/gestion_client/type_activite.md
+  #             - "Qualification client": facturation/parametrage/gestion_client/qualification_client.md
+  #             - Représentant: facturation/parametrage/gestion_client/representant.md
+  #             - "Type d'adresse": facturation/parametrage/gestion_client/type_adresse.md
 
-      - Devise: facturation/parametrage/devise.md
+  #     - Devise: facturation/parametrage/devise.md
 
-  - Conditionnement:
-      - "Exemple": conditionnement/example.md # placeholder
+  # - Conditionnement:
+  #     - "Exemple": conditionnement/example.md # placeholder
 
-  - Stock:
-      - "Exemple": stock/example.md # placeholder
+  # - Stock:
+  #     - "Exemple": stock/example.md # placeholder
 
 #   - Planning:
 #       - "Création OF CMD": planning/creation_of_cmd.md
