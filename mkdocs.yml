@@ -49,10 +49,10 @@ nav:
         #- "Affectation modèle gamme": referentiel/gamme/affectation.md
         #- "Import Gamme": referentiel/gamme/import.md
 
-    # - Paramétrage:
+    - Paramétrage:
     #     - "Paramétrage Marque": referentiel/parametrage/marque.md
     #     - "Paramétrage Tiers": referentiel/parametrage/tiers.md
-    #     - "Autres Paramétrages": referentiel/parametrage/autres.md
+        - "Autres Paramétrages": referentiel/parametrage/parametrages_referentiel.md
 
     # - Maintenance:
     #     - "Historique des nomenclatures": referentiel/maintenance/historique_nomenclatures.md
